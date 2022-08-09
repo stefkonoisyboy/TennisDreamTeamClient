@@ -6,11 +6,39 @@
 
 <MudLayout>
     <MudAppBar Color="Color.Secondary" Elevation="0">
-        <MudIconButton Icon="@Icons.Filled.SportsTennis" Color="Color.Inherit" Link="https://mudblazor.com/" Target="_blank" />
+        <MudIconButton Icon="@Icons.Filled.SportsTennis" Color="Color.Inherit" />
         <MudText Typo="Typo.h6">Tennis</MudText>
         <MudSpacer />
-        <MudIconButton Icon="@Icons.Filled.Search" Color="Color.Inherit" Link="https://mudblazor.com/" Target="_blank" />
-        <MudIconButton Icon="@Icons.Filled.Settings" Color="Color.Inherit" Link="https://github.com/MudBlazor/MudBlazor/" Target="_blank" />
+        <MudIconButton Icon="@Icons.Filled.Search" OnClick="this.NavigateToSearch" Color="Color.Inherit" />
+        <MudMenu>
+            <ActivatorContent>
+                <MudIconButton Icon="@Icons.Filled.Settings" Color="Color.Inherit" />
+            </ActivatorContent>
+            <ChildContent>
+                 <MudMenuItem>
+                    <MudFab Icon="@Icons.Filled.Person" Style="color: #555E61; background-color: white; block-size: 20px; box-shadow: none;" Label="Profile" />
+                 </MudMenuItem>
+                 <MudMenuItem>
+                    <MudFab Icon="@Icons.Filled.ExitToApp" Style="color: #555E61; background-color: white; block-size: 20px; box-shadow: none;" Label="Sign Out" />
+                 </MudMenuItem>
+            </ChildContent>
+        </MudMenu>
+    </MudAppBar>
+    <MudAppBar Bottom="true" Color="Color.Secondary" Elevation="0">
+        <MudGrid Class="ma-3">
+            <MudItem xs="3">
+                <MudIconButton Icon="@Icons.Filled.SportsTennis" Color="Color.Inherit" />
+            </MudItem>
+            <MudItem xs="3">
+                <MudIconButton Icon="@Icons.Filled.PeopleOutline" Color="Color.Inherit" />
+            </MudItem>
+            <MudItem xs="3">
+                <MudIconButton Icon="@Icons.Filled.StarOutline" Color="Color.Inherit" />
+            </MudItem>
+            <MudItem xs="3">
+                <MudIconButton Icon="@Icons.Filled.WineBar" Color="Color.Inherit" />
+            </MudItem>
+        </MudGrid>
     </MudAppBar>
     <MudMainContent>
         <MudContainer MaxWidth="MaxWidth.Large" Class="my-16 pt-16">
@@ -25,5 +53,10 @@
     void DrawerToggle()
     {
         _drawerOpen = !_drawerOpen;
+    }
+
+    void NavigateToSearch()
+    {
+        this.navigationManager.NavigateTo("/search");
     }
 }
