@@ -6,7 +6,58 @@
      <MudCarouselItem Transition="Transition.Slide" Color="@Color.Secondary">
         <div class="d-flex" style="block-size: 100%;">
             <MudPaper Class="mx-auto my-auto d-flex" style="block-size: 70%; inline-size: 50%; background-color: white;">
-                <MudFab Class="mx-auto my-auto" Icon="@Icons.Filled.CalendarMonth" Style="color: #555E61; background-color: white; block-size: 20px; box-shadow: none;" Label="02/08 TU" />
+                <MudMenu MaxHeight="200">
+                    <ActivatorContent>
+                        <MudFab Class="mx-auto my-auto" Icon="@Icons.Filled.CalendarMonth" Style="color: #555E61; background-color: white; block-size: 20px; box-shadow: none;" Label="02/08 TU" />
+                    </ActivatorContent>
+                    <ChildContent >
+                         <MudMenuItem>
+                             <MudText Align="Align.Center">02/08 TU</MudText>
+                         </MudMenuItem>
+                         <MudMenuItem>
+                             <MudText Align="Align.Center">03/08 WE</MudText>
+                         </MudMenuItem>
+                         <MudMenuItem>
+                             <MudText Align="Align.Center">04/08 TH</MudText>
+                         </MudMenuItem>
+                         <MudMenuItem>
+                             <MudText Align="Align.Center">05/08 FR</MudText>
+                         </MudMenuItem>
+                         <MudMenuItem>
+                             <MudText Align="Align.Center">06/08 SA</MudText>
+                         </MudMenuItem>
+                         <MudMenuItem>
+                             <MudText Align="Align.Center">07/08 SU</MudText>
+                         </MudMenuItem>
+                         <MudMenuItem>
+                             <MudText Align="Align.Center">08/08 MO</MudText>
+                         </MudMenuItem>
+                         <MudMenuItem Style="background-color: #FF4081;">
+                             <MudText Align="Align.Center" Style="color: white;">TODAY</MudText>
+                         </MudMenuItem>
+                         <MudMenuItem>
+                             <MudText Align="Align.Center">10/08 WE</MudText>
+                         </MudMenuItem>
+                         <MudMenuItem>
+                             <MudText Align="Align.Center">11/08 TH</MudText>
+                         </MudMenuItem>
+                         <MudMenuItem>
+                             <MudText Align="Align.Center">12/08 FR</MudText>
+                         </MudMenuItem>
+                         <MudMenuItem>
+                             <MudText Align="Align.Center">13/08 SA</MudText>
+                         </MudMenuItem>
+                         <MudMenuItem>
+                             <MudText Align="Align.Center">14/08 SU</MudText>
+                         </MudMenuItem>
+                         <MudMenuItem>
+                             <MudText Align="Align.Center">15/08 MO</MudText>
+                         </MudMenuItem>
+                         <MudMenuItem>
+                             <MudText Align="Align.Center">16/08 TU</MudText>
+                         </MudMenuItem>
+                    </ChildContent>
+                </MudMenu>
             </MudPaper>
         </div>
     </MudCarouselItem>
@@ -112,7 +163,7 @@
 
 <MudDivider Class="mt-3" />
 
-<MudGrid Class="pr-5">
+<MudGrid @onclick="this.NavigateToAllGames" Class="pr-5">
     <MudItem Class="my-auto" xs="2">
         <MudIconButton Icon="@Icons.Filled.FormatListBulleted" Color="Color.Inherit" Link="https://mudblazor.com/" Target="_blank" />
     </MudItem>
@@ -132,7 +183,7 @@
 </MudPaper>
 
 <MudPaper Class="mt-3" Style="block-size: 100%; box-shadow: none;">
-    <MudGrid Class="pr-5">
+    <MudGrid @onclick="this.NavigateToAllGamesByTournament" Class="pr-5">
         <MudItem Class="my-auto" xs="2">
             <MudImage Fluid="true" Src="https://res.cloudinary.com/djokeracloud/image/upload/v1660044148/tennid-dream-team/germany_ku2xlt.png" Alt="Germany" Class="rounded-lg"/>
         </MudItem>
@@ -370,3 +421,15 @@
         </MudItem>
     </MudGrid>
 </MudPaper>
+
+@code {
+    void NavigateToAllGames()
+    {
+        this.navigationManager.NavigateTo("/all-games");
+    }
+
+    void NavigateToAllGamesByTournament()
+    {
+        this.navigationManager.NavigateTo("/all-games-by-tournament");
+    }
+}

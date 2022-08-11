@@ -27,7 +27,7 @@
     <MudAppBar Bottom="true" Color="Color.Secondary" Elevation="0">
         <MudGrid Class="ma-3">
             <MudItem Class="d-flex justify-center" xs="3">
-                <MudIconButton Icon="@Icons.Filled.SportsTennis" Color="Color.Inherit" />
+                <MudIconButton OnClick="this.NavigateToHome" Icon="@Icons.Filled.SportsTennis" Color="Color.Inherit" />
             </MudItem>
             <MudItem Class="d-flex justify-center" xs="3">
                 <MudIconButton Icon="@Icons.Filled.PeopleOutline" Color="Color.Inherit" />
@@ -58,5 +58,10 @@
     void NavigateToSearch()
     {
         this.navigationManager.NavigateTo("/search");
+    }
+
+    void NavigateToHome()
+    {
+        this.navigationManager.NavigateTo("/");
     }
 }
