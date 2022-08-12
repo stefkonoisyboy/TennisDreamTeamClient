@@ -1,0 +1,53 @@
+﻿@page "/country-league"
+@inject IDialogService DialogService
+
+ <MudGrid Class="pl-5">
+        <MudItem Style="background:#C0C0C0;" xs="12">
+            <MudGrid>
+                <MudItem xs="12">
+                    <MudText Typo="Typo.body2">Germany</MudText>
+                </MudItem>
+                <MudItem Class="rounded" xs="3">
+                    <MudPaper>
+                        <MudImage Fluid="true" Src="https://www.pngall.com/wp-content/uploads/4/Premier-League-Logo.png" Alt="Major League" />
+                    </MudPaper>
+                </MudItem>
+                <MudItem xs="9">
+                    <MudText Typo="Typo.h6">
+                        Premier League
+                    </MudText>
+                    <MudText Style="color:#646f6e;" Typo="Typo.body1">
+                        <MudButton OnClick="OpenDialog" Variant="Variant.Filled" Color="Color.Primary">
+                            2022/2023
+                        </MudButton>
+                    </MudText>
+                </MudItem>
+            </MudGrid>
+        </MudItem>
+        <MudItem xs="12">
+            <MudGrid>
+                <MudItem Style="color: rgba(255, 0, 0, 0.78); border-bottom:4px solid rgba(255, 0, 0, 0.78);" xs="4">
+                    Ranked
+                </MudItem>
+                <MudItem xs="4">
+                    Results
+                </MudItem>
+                <MudItem xs="4">
+                    Program
+                </MudItem>
+            </MudGrid>
+        </MudItem>
+        <MudItem xs="12">
+            <MudChip Color="Color.Error">General</MudChip>
+            <MudChip Color="Color.Default">TOP </MudChip>
+        </MudItem>
+ </MudGrid>
+
+
+@code {
+    private void OpenDialog()
+    {
+        var options = new DialogOptions { CloseOnEscapeKey = true };
+        this.DialogService.Show<Dialog>("Premier league", options );
+    }
+}

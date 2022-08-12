@@ -1,0 +1,28 @@
+﻿<MudDialog >
+    <DialogContent>
+        <MudGrid Class="justify-items-center">
+            <MudItem Style="font-weight:bolder;border-left: 4px solid rgba(4, 110, 181, 1) ;background:rgba(55, 155, 238, 0.25)" xs="12">
+                2022/2023
+            </MudItem>
+            <MudItem xs="12">
+                2021/2022
+            </MudItem>
+            <MudItem xs="12">
+                2020/2021
+            </MudItem>
+            <MudItem xs="12">
+                2019/2020
+            </MudItem>
+        </MudGrid>
+    </DialogContent>
+    <DialogActions>
+        <MudButton OnClick="Cancel">Cancel</MudButton>
+    </DialogActions>
+</MudDialog>
+
+@code {
+     [CascadingParameter] MudDialogInstance MudDialog { get; set; }
+
+    void Submit() => MudDialog.Close(DialogResult.Ok(true));
+    void Cancel() => MudDialog.Cancel();
+}

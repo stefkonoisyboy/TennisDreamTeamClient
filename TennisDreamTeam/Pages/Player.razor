@@ -1,0 +1,54 @@
+﻿@page "/player"
+<MudGrid>
+    <MudItem Style="background:#C0C0C0;" xs="12">
+            <MudGrid>
+                <MudItem xs="12">
+                    <MudText Typo="Typo.body2">Russia</MudText>
+                </MudItem>
+                <MudItem Class="rounded" xs="3">
+                    <MudPaper>
+                        <MudImage Fluid="true" Src="https://i.goalzz.com/?i=o%2Fn%2F6%2F14%2Fdaniil-medvedev-1.png" Alt="Daniel Medvedev" />
+                    </MudPaper>
+                </MudItem>
+                <MudItem xs="9">
+                    <MudText Style="font-weight:bolder;" Typo="Typo.h6">
+                        Daniel Medvedev
+                    </MudText>
+                    <MudText Style="color:#646f6e;" Typo="Typo.body2">
+                        Age: 26 (11.02.1996)
+                    </MudText>
+                </MudItem>
+            </MudGrid>
+    </MudItem>
+    <MudDivider />
+    <MudItem Style="background:#C0C0C0;" xs="12">
+        <MudGrid>
+            <MudItem xs="1">
+                <MudIcon Icon="@Icons.Filled.InsertChart" />
+            </MudItem>
+            <MudItem xs="3">
+                 <MudText Typo="Typo.body2">
+                    ATP: 1.
+                </MudText>
+            </MudItem>
+        </MudGrid>
+    </MudItem>
+    <MudItem xs="12">
+        <MudGrid>
+             <MudItem Style="color: rgba(255, 0, 0, 0.78); border-bottom:4px solid rgba(255, 0, 0, 0.78);" xs="4">
+                 Results
+             </MudItem>
+             <MudItem xs="4">
+                 News
+             </MudItem>
+        </MudGrid>
+    </MudItem>
+    <MudItem xs="12">
+        <MudChip Color="Color.Error">Single</MudChip>
+        <MudChip Color="Color.Default">Doubles </MudChip>
+    </MudItem>
+</MudGrid>
+
+@code {
+
+}

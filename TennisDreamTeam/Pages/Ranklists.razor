@@ -1,0 +1,114 @@
+﻿@page "/ranklists"
+@inject NavigationManager NavigationManager
+
+<MudGrid Spacing="1">
+    <MudItem xs="12">
+        <MudText Typo="Typo.h6">
+            ATP Single
+        </MudText>
+    </MudItem>
+    <MudItem Style="background:#C0C0C0;" xs="12">
+        <MudText  Typo="Typo.body2">
+            08.08.2022
+        </MudText>
+    </MudItem>
+    <MudItem Class="mt-1" Style="background:#C0C0C0;" xs="12">
+        <MudGrid>
+            <MudItem xs="9">
+                <MudText Class="flex-grow-1">
+                    #
+                </MudText>
+            </MudItem>
+            <MudItem xs="3">
+                <MudText>
+                    Points
+                </MudText>
+            </MudItem>
+        </MudGrid>
+    </MudItem>
+    <MudItem xs="12" @onclick="OpenPlayePage">
+        <MudGrid>
+            <MudItem xs="2">
+                <MudText>
+                    1.
+                </MudText>
+            </MudItem>
+            <MudItem xs="7">
+                <MudGrid>
+                   <MudItem xs="3">
+                       <MudImage Fluid="true" Src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Russia.png/640px-Flag_of_Russia.png" Alt="Russian flag" />
+                   </MudItem>
+                   <MudItem xs="9">
+                       <MudText Typo="Typo.body2">
+                            Daniel Medvedev
+                        </MudText>
+                   </MudItem>
+                </MudGrid>
+            </MudItem>
+            <MudItem xs="3">
+                <MudText>
+                    7875
+                </MudText>
+            </MudItem>
+        </MudGrid>
+    </MudItem>
+     <MudItem xs="12">
+        <MudGrid>
+            <MudItem xs="2">
+                <MudText>
+                    2.
+                </MudText>
+            </MudItem>
+            <MudItem xs="7">
+                <MudGrid>
+                   <MudItem xs="3">
+                       <MudImage Fluid="true" Src="https://res.cloudinary.com/djokeracloud/image/upload/v1660044148/tennid-dream-team/germany_ku2xlt.png" Alt="Germany flag" />
+                   </MudItem>
+                   <MudItem xs="9">
+                       <MudText Typo="Typo.body2">
+                            Aleksander Zverev
+                        </MudText>
+                   </MudItem>
+                </MudGrid>
+            </MudItem>
+            <MudItem xs="3">
+                <MudText>
+                    6760
+                </MudText>
+            </MudItem>
+        </MudGrid>
+    </MudItem>
+     <MudItem xs="12">
+        <MudGrid>
+            <MudItem xs="2">
+                <MudText>
+                    3.
+                </MudText>
+            </MudItem>
+            <MudItem xs="7">
+                <MudGrid>
+                   <MudItem xs="3">
+                       <MudImage Fluid="true" Src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/2560px-Flag_of_Spain.svg.png" Alt="Spain flag" />
+                   </MudItem>
+                   <MudItem xs="9">
+                       <MudText Typo="Typo.body2">
+                            Nadal Rafael
+                        </MudText>
+                   </MudItem>
+                </MudGrid>
+            </MudItem>
+            <MudItem xs="3">
+                <MudText>
+                    5620
+                </MudText>
+            </MudItem>
+        </MudGrid>
+    </MudItem>
+</MudGrid>
+
+@code{
+    private void OpenPlayePage()
+    {
+        this.NavigationManager.NavigateTo("/player");
+    }
+}
