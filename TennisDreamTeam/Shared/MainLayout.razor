@@ -6,7 +6,7 @@
 
 <MudLayout>
     <MudAppBar Color="Color.Secondary" Elevation="0">
-        <MudIconButton Icon="@Icons.Filled.SportsTennis" Color="Color.Inherit" />
+        <MudIconButton OnClick="this.DrawerToggle" Icon="@Icons.Filled.SportsTennis" Color="Color.Inherit" />
         <MudText Typo="Typo.h6">Tennis</MudText>
         <MudSpacer />
         <MudIconButton Icon="@Icons.Filled.Search" OnClick="this.NavigateToSearch" Color="Color.Inherit" />
@@ -24,35 +24,58 @@
             </ChildContent>
         </MudMenu>
     </MudAppBar>
-    <MudAppBar Bottom="true" Color="Color.Secondary" Elevation="0">
-        <MudGrid Class="ma-3">
-            <MudItem Class="d-flex justify-center" xs="3">
-                <MudIconButton OnClick="this.NavigateToHome" Icon="@Icons.Filled.SportsTennis" Color="Color.Inherit" />
-            </MudItem>
-            <MudItem Class="d-flex justify-center" xs="3">
-                <MudIconButton Icon="@Icons.Filled.PeopleOutline" Color="Color.Inherit" />
-            </MudItem>
-            <MudItem Class="d-flex justify-center" xs="3">
-                <MudIconButton Icon="@Icons.Filled.StarOutline" Color="Color.Inherit" />
-            </MudItem>
-            <MudItem Class="d-flex justify-center" xs="3">
-                <MudIconButton Icon="@Icons.Filled.WineBar" Color="Color.Inherit" />
-            </MudItem>
-        </MudGrid>
-    </MudAppBar>
-    <MudMainContent>
-        <MudContainer MaxWidth="MaxWidth.Large" Class="my-16 pt-16">
-            @Body
-        </MudContainer>
+    @if (drawerOpen)
+    {
+        <MudAppBar Style="display: block;" Bottom="true" Fixed="true" Color="Color.Secondary" Elevation="0">
+            <MudGrid>
+                <MudItem Class="d-flex justify-center" xs="3">
+                    <MudIconButton OnClick="this.NavigateToHome" Icon="@Icons.Filled.SportsTennis" Color="Color.Inherit" />
+                </MudItem>
+                <MudItem Class="d-flex justify-center" xs="3">
+                    <MudIconButton Icon="@Icons.Filled.PeopleOutline" Color="Color.Inherit" />
+                </MudItem>
+                <MudItem Class="d-flex justify-center" xs="3">
+                    <MudIconButton Icon="@Icons.Filled.StarOutline" Color="Color.Inherit" />
+                </MudItem>
+                <MudItem Class="d-flex justify-center" xs="3">
+                    <MudIconButton OnClick="this.NavigateToStandings" Icon="@Icons.Filled.WineBar" Color="Color.Inherit" />
+                </MudItem>
+            </MudGrid>
+        </MudAppBar>
+    }
+    else 
+    {
+        <MudAppBar Style="display: none;" Bottom="true" Fixed="true" Color="Color.Secondary" Elevation="0">
+            <MudGrid>
+                <MudItem Class="d-flex justify-center" xs="2">
+                    <MudIconButton OnClick="this.DrawerToggle" Icon="@Icons.Filled.Menu" Color="Color.Inherit" />
+                </MudItem>
+                <MudItem Class="d-flex justify-center" xs="2">
+                    <MudIconButton OnClick="this.NavigateToHome" Icon="@Icons.Filled.SportsTennis" Color="Color.Inherit" />
+                </MudItem>
+                <MudItem Class="d-flex justify-center" xs="2">
+                    <MudIconButton Icon="@Icons.Filled.PeopleOutline" Color="Color.Inherit" />
+                </MudItem>
+                <MudItem Class="d-flex justify-center" xs="2">
+                    <MudIconButton Icon="@Icons.Filled.StarOutline" Color="Color.Inherit" />
+                </MudItem>
+                <MudItem Class="d-flex justify-center" xs="2">
+                    <MudIconButton OnClick="this.NavigateToStandings" Icon="@Icons.Filled.WineBar" Color="Color.Inherit" />
+                </MudItem>
+            </MudGrid>
+        </MudAppBar>
+    }
+    <MudMainContent Style="overflow-y: scroll; overflow-x: hidden;">
+        @Body
     </MudMainContent>
 </MudLayout>
 
 @code {
-    bool _drawerOpen = true;
+    private bool drawerOpen = true;
 
     void DrawerToggle()
     {
-        _drawerOpen = !_drawerOpen;
+        drawerOpen = !drawerOpen;
     }
 
     void NavigateToSearch()
@@ -63,5 +86,9 @@
     void NavigateToHome()
     {
         this.navigationManager.NavigateTo("/");
+    }
+
+    void NavigateToStandings() {
+        this.navigationManager.NavigateTo("/standings");
     }
 }

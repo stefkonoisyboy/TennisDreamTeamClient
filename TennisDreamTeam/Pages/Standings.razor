@@ -1,10 +1,12 @@
 ﻿@page "/standings"
 
+<PageTitle>Standings</PageTitle>
+
 <MudText Typo="Typo.body2" Class="pl-5" Style="background: #fff2ce;">
     Ranklist
 </MudText>
 <MudGrid>
-    <MudItem xs="12">
+    <MudItem @onclick="this.NavigateToRanklist" xs="12">
         <MudText Style="color:#C0C0C0; font-weight: bolder;" Typo="Typo.body1">
             ATP Single
         </MudText>
@@ -43,5 +45,9 @@
 </MudGrid>
 <MudDivider DividerType="DividerType.FullWidth" />
 
-
-
+@code {
+    void NavigateToRanklist()
+    {
+        this.navigationManager.NavigateTo("/ranklists");
+    }
+}

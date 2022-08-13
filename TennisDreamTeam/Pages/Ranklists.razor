@@ -1,5 +1,6 @@
 ﻿@page "/ranklists"
-@inject NavigationManager NavigationManager
+
+<PageTitle>Ranklists</PageTitle>
 
 <MudGrid Spacing="1">
     <MudItem xs="12">
@@ -26,7 +27,7 @@
             </MudItem>
         </MudGrid>
     </MudItem>
-    <MudItem xs="12" @onclick="OpenPlayePage">
+    <MudItem xs="12" Class="mt-2" @onclick="OpenPlayePage">
         <MudGrid>
             <MudItem xs="2">
                 <MudText>
@@ -40,7 +41,7 @@
                    </MudItem>
                    <MudItem xs="9">
                        <MudText Typo="Typo.body2">
-                            Daniel Medvedev
+                            Daniil Medvedev
                         </MudText>
                    </MudItem>
                 </MudGrid>
@@ -52,7 +53,10 @@
             </MudItem>
         </MudGrid>
     </MudItem>
-     <MudItem xs="12">
+    <MudItem xs="12">
+        <MudDivider Class="mt-2" />
+    </MudItem>
+    <MudItem xs="12" Class="mt-2">
         <MudGrid>
             <MudItem xs="2">
                 <MudText>
@@ -66,7 +70,7 @@
                    </MudItem>
                    <MudItem xs="9">
                        <MudText Typo="Typo.body2">
-                            Aleksander Zverev
+                            Alexander Zverev
                         </MudText>
                    </MudItem>
                 </MudGrid>
@@ -78,7 +82,10 @@
             </MudItem>
         </MudGrid>
     </MudItem>
-     <MudItem xs="12">
+    <MudItem xs="12">
+        <MudDivider Class="mt-2" />
+    </MudItem>
+    <MudItem xs="12" Class="mt-2">
         <MudGrid>
             <MudItem xs="2">
                 <MudText>
@@ -109,6 +116,6 @@
 @code{
     private void OpenPlayePage()
     {
-        this.NavigationManager.NavigateTo("/player");
+        this.navigationManager.NavigateTo("/player");
     }
 }
