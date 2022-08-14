@@ -32,7 +32,7 @@
                     <MudIconButton OnClick="this.NavigateToHome" Icon="@Icons.Filled.SportsTennis" Color="Color.Inherit" />
                 </MudItem>
                 <MudItem Class="d-flex justify-center" xs="3">
-                    <MudIconButton Icon="@Icons.Filled.PeopleOutline" Color="Color.Inherit" />
+                    <MudIconButton OnClick="this.NavigateToTeam" Icon="@Icons.Filled.PeopleOutline" Color="Color.Inherit" />
                 </MudItem>
                 <MudItem Class="d-flex justify-center" xs="3">
                     <MudIconButton Icon="@Icons.Filled.StarOutline" Color="Color.Inherit" />
@@ -90,5 +90,10 @@
 
     void NavigateToStandings() {
         this.navigationManager.NavigateTo("/standings");
+    }
+
+    void NavigateToTeam() 
+    {
+        this.navigationManager.NavigateTo("/team");
     }
 }
