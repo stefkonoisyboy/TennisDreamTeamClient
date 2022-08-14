@@ -30,7 +30,7 @@
         <MudItem Class="my-auto" xs="2">
             <MudImage Fluid="true" Src="https://www.tennis24.com/res/image/data/tSfwGCdM-0rY6MEPI.png" Alt="Germany" Class="rounded-lg"/>
         </MudItem>
-        <MudItem Class="my-auto" xs="8">
+        <MudItem @onclick="this.NavigateToPlayer" Class="my-auto" xs="8">
             <MudText>
                 <strong>Novak Djokovic</strong>
             </MudText>
@@ -149,6 +149,22 @@
                 <strong>Novak Djokovic</strong>
             </MudText>
             <MudText Style="color: #555E61;">SERBIA</MudText>
+        </MudItem>
+        <MudItem Class="my-auto" xs="2">
+            <MudIcon Icon="@Icons.Filled.StarOutline" />
+        </MudItem>
+    </MudGrid>
+</MudPaper>
+<MudPaper Class="mt-3" Style="block-size: 100%; box-shadow: none;">
+    <MudGrid Class="pr-5">
+        <MudItem Class="my-auto" xs="2">
+            <MudImage Fluid="true" Src="https://www.tennis24.com/res/image/data/WlZRMjgU-pGHgiFbR.png" Alt="Germany" Class="rounded-lg" />
+        </MudItem>
+        <MudItem @onclick="this.NavigateToTournamentSearchResult" Class="my-auto" xs="8">
+            <MudText>
+                <strong>Montreal ATP</strong>
+            </MudText>
+            <MudText Style="color: #555E61;">CANADA</MudText>
         </MudItem>
         <MudItem Class="my-auto" xs="2">
             <MudIcon Icon="@Icons.Filled.StarOutline" />
@@ -164,5 +180,15 @@
     void NavigateToHome()
     {
         this.navigationManager.NavigateTo("/");
+    }
+
+    void NavigateToTournamentSearchResult() 
+    {
+        this.navigationManager.NavigateTo("/tournament-search-result");
+    }
+
+    void NavigateToPlayer() 
+    {
+        this.navigationManager.NavigateTo("/player");
     }
 }

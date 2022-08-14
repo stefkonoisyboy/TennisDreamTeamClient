@@ -65,7 +65,7 @@
 </MudGrid>
 
 <MudPaper Class="mt-3" Style="inline-size: 100%; background-color: lightgray;" Elevation="0">
-    <MudGrid Class="pl-3">
+    <MudGrid @onclick="this.NavigateToTournamentDetails" Class="pl-3">
         <MudItem Class="my-auto" xs="2">
             <MudImage Fluid="true" Src="https://res.cloudinary.com/djokeracloud/image/upload/v1660044148/tennid-dream-team/germany_ku2xlt.png" Alt="Germany"/>
         </MudItem>
@@ -432,5 +432,10 @@
     void NavigateToMatchDetails()
     {
         this.navigationManager.NavigateTo("/match-details");
+    }
+
+    void NavigateToTournamentDetails()
+    {
+        this.navigationManager.NavigateTo("/tournament-details");
     }
 }

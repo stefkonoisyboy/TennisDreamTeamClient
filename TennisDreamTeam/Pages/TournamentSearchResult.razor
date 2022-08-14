@@ -1,0 +1,31 @@
+﻿@page "/tournament-search-result"
+
+<MudPaper Elevation="0" Style="background-color: lightgray;">
+    <MudGrid Class="px-2 pt-2">
+        <MudItem Class="d-flex align-center" xs="2">
+            <MudImage Fluid="true" Src="https://res.cloudinary.com/djokeracloud/image/upload/v1660044148/tennid-dream-team/germany_ku2xlt.png" Alt="Germany" Class="rounded-lg" />
+        </MudItem>
+        <MudItem Class="d-flex align-center" xs="10">
+            <MudText Style="color: #555E61;">CANADA</MudText>
+        </MudItem>
+    </MudGrid>
+</MudPaper>
+
+<MudText @onclick="this.NavigateToTournamentDetails" Class="px-2 mt-6">
+    <strong>Singles - Main</strong>
+</MudText>
+
+<MudDivider Class="mt-2" />
+
+<MudText Class="px-2 mt-3">
+    <strong>Singles - Qualification</strong>
+</MudText>
+
+<MudDivider Class="mt-2" />
+
+@code {
+    void NavigateToTournamentDetails() 
+    {
+        this.navigationManager.NavigateTo("/tournament-details");
+    }
+}

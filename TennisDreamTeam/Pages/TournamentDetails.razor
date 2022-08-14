@@ -1,0 +1,610 @@
+﻿@page "/tournament-details"
+
+<MudPaper Elevation="0" Style="background-color: lightgray;">
+    <MudGrid Class="px-2">
+        <MudItem Class="d-flex align-center" xs="2">
+            <MudImage Fluid="true" Src="https://res.cloudinary.com/djokeracloud/image/upload/v1660044148/tennid-dream-team/germany_ku2xlt.png" Alt="Germany" Class="rounded-lg" />
+        </MudItem>
+        <MudItem Class="d-flex align-center" xs="10">
+            <MudText Style="color: #555E61;">CANADA</MudText>
+        </MudItem>
+    </MudGrid>
+
+    <MudGrid Class="mt-2 px-2">
+        <MudItem Class="d-flex aling-center" xs="4">
+            <MudImage Fluid="true" Src="https://www.tennis24.com/res/image/data/WlZRMjgU-pGHgiFbR.png" Alt="Germany" Class="rounded-lg" />
+        </MudItem>
+        <MudItem xs="8">
+            <MudGrid>
+                <MudItem Class="d-flex justify-center" xs="12">
+                    <MudText Typo="Typo.h6">
+                        <strong>Montreal ATP</strong>
+                    </MudText>
+                </MudItem>
+            </MudGrid>
+            <MudGrid>
+                <MudItem Class="d-flex justify-center" xs="12">
+                    <MudMenu MaxHeight="200">
+                        <ActivatorContent>
+                            <MudFab DisableElevation="true" Style="color: #555E61; background-color: lightgray;" EndIcon="@Icons.Filled.ArrowDownward" Label="2022" />
+                        </ActivatorContent>
+                        <ChildContent>
+                            <MudText Class="pa-3">
+                                <strong>Montreal ATP</strong>
+                            </MudText>
+
+                            <MudDivider Class="mt-2" />
+
+                            <MudPaper Elevation="0" Style="background-color: skyblue;">
+                                <MudText Class="pa-3">
+                                    <strong>2022</strong>
+                                </MudText>
+                            </MudPaper>
+
+                            <MudDivider Class="mt-2" />
+
+                            <MudPaper Elevation="0">
+                                <MudText Class="pa-3">
+                                    <strong>2021</strong>
+                                </MudText>
+                            </MudPaper>
+
+                            <MudDivider Class="mt-2" />
+
+                            <MudPaper Elevation="0">
+                                <MudText Class="pa-3">
+                                    <strong>2020</strong>
+                                </MudText>
+                            </MudPaper>
+
+                            <MudDivider Class="mt-2" />
+
+                            <MudPaper Elevation="0">
+                                <MudText Class="pa-3">
+                                    <strong>2019</strong>
+                                </MudText>
+                            </MudPaper>
+
+                            <MudDivider Class="mt-2" />
+
+                            <MudPaper Elevation="0">
+                                <MudText Class="pa-3">
+                                    <strong>2018</strong>
+                                </MudText>
+                            </MudPaper>
+
+                            <MudDivider Class="mt-2" />
+
+                            <MudPaper Elevation="0">
+                                <MudText Class="pa-3">
+                                    <strong>2017</strong>
+                                </MudText>
+                            </MudPaper>
+
+                            <MudDivider Class="mt-2" />
+
+                             <MudPaper Elevation="0">
+                                <MudText Class="pa-3">
+                                    <strong>2016</strong>
+                                </MudText>
+                            </MudPaper>
+
+                            <MudDivider Class="mt-2" />
+
+                            <MudPaper Elevation="0">
+                                <MudText Class="pa-3">
+                                    <strong>2015</strong>
+                                </MudText>
+                            </MudPaper>
+
+                            <MudDivider Class="mt-2" />
+                        </ChildContent>
+                    </MudMenu>
+                </MudItem>
+            </MudGrid>
+            <MudGrid>
+                <MudItem Class="d-flex justify-center" xs="12">
+                    <MudMenu MaxHeight="200">
+                        <ActivatorContent>
+                            <MudFab DisableElevation="true" Style="color: #555E61; background-color: lightgray;" EndIcon="@Icons.Filled.ArrowDownward" Label="Singles - Main" />
+                        </ActivatorContent>
+                        <ChildContent>
+                            <MudText Class="pa-3">
+                                <strong>Montreal ATP - 2022</strong>
+                            </MudText>
+
+                            <MudDivider Class="mt-2" />
+
+                            <MudPaper Elevation="0" Style="background-color: skyblue;">
+                                <MudText Class="pa-3">
+                                    <strong>Singles - Main</strong>
+                                </MudText>
+                            </MudPaper>
+
+                            <MudDivider Class="mt-2" />
+
+                            <MudPaper Elevation="0">
+                                <MudText Class="pa-3">
+                                    <strong>Singles - Qualification</strong>
+                                </MudText>
+                            </MudPaper>
+
+                            <MudDivider Class="mt-2" />
+                        </ChildContent>
+                    </MudMenu>
+                </MudItem>
+            </MudGrid>
+        </MudItem>
+    </MudGrid>
+</MudPaper>
+
+<MudTabs Class="mt-6" Elevation="0" ApplyEffectsToContainer="true" Rounded="true" Centered="true" Color="@Color.Secondary">
+    <MudTabPanel Text="DRAW">
+        <MudGrid Class="mt-1 px-1">
+            <MudItem Class="d-flex justify-center" xs="4">
+                <MudChip Class="py-1" Color="Color.Secondary">
+                    <MudText Style="font-size: 12px;">1/32-FINALS</MudText>
+                </MudChip>
+            </MudItem>
+            <MudItem Class="d-flex justify-center" xs="4">
+                <MudChip Style="font-size: 12px;" Class="py-1" Color="Color.Secondary">1/16-FINALS</MudChip>
+            </MudItem>
+            <MudItem Class="d-flex justify-center" xs="4">
+                <MudChip Style="font-size: 12px;" Class="py-1" Color="Color.Secondary">1/8-FINALS</MudChip>
+            </MudItem>
+            <MudItem Class="d-flex justify-center" xs="4">
+                <MudChip Style="font-size: 12px;" Class="py-1" Color="Color.Secondary">1/4-FINALS</MudChip>
+            </MudItem>
+            <MudItem Class="d-flex justify-center" xs="4">
+                <MudChip Style="font-size: 12px;" Class="py-1" Color="Color.Secondary">1/2-FINALS</MudChip>
+            </MudItem>
+            <MudItem Class="d-flex justify-center" xs="4">
+                <MudChip Style="font-size: 12px;" Class="py-1" Color="Color.Secondary">FINAL</MudChip>
+            </MudItem>
+        </MudGrid>
+
+        <MudDivider Class="mt-2" />
+
+        <MudGrid Class="mt-3">
+            <MudItem xs="1"></MudItem>
+            <MudItem xs="10">
+                <MudPaper Elevation="0" Class="rounded" Style="background-color: lightgray;">
+                    <MudGrid Class="px-2">
+                        <MudItem xs="10">
+                            <MudText>Kyrgios N.</MudText>
+                        </MudItem>
+                        <MudItem xs="1">
+                            <MudText>
+                                <strong>1</strong>
+                            </MudText>
+                        </MudItem>
+                    </MudGrid>
+                    <MudGrid Class="px-2">
+                        <MudItem xs="10">
+                            <MudText>
+                                <strong>Hurkacz H.</strong> (8)
+                            </MudText>
+                        </MudItem>
+                        <MudItem xs="1">
+                            <MudText>
+                                <strong>2</strong>
+                            </MudText>
+                        </MudItem>
+                    </MudGrid>
+                </MudPaper>
+
+                <MudPaper Elevation="0" Class="rounded mt-4" Style="background-color: lightgray;">
+                    <MudGrid Class="px-2">
+                        <MudItem xs="10">
+                            <MudText>Auger Aliassime F. (6)</MudText>
+                        </MudItem>
+                        <MudItem xs="1">
+                            <MudText>
+                                <strong>0</strong>
+                            </MudText>
+                        </MudItem>
+                    </MudGrid>
+                    <MudGrid Class="px-2">
+                        <MudItem xs="10">
+                            <MudText>
+                                <strong>Ruud C.</strong> (4)
+                            </MudText>
+                        </MudItem>
+                        <MudItem xs="1">
+                            <MudText>
+                                <strong>2</strong>
+                            </MudText>
+                        </MudItem>
+                    </MudGrid>
+                </MudPaper>
+
+                <MudPaper Elevation="0" Class="rounded mt-8" Style="background-color: aliceblue;">
+                    <MudGrid Class="px-2">
+                        <MudItem xs="10">
+                            <MudText>Draper J.</MudText>
+                        </MudItem>
+                        <MudItem xs="1">
+                            <MudText>
+                                <strong>0</strong>
+                            </MudText>
+                        </MudItem>
+                    </MudGrid>
+                    <MudGrid Class="px-2">
+                        <MudItem xs="10">
+                            <MudText>
+                                <strong>Carreno-Busta P.</strong>
+                            </MudText>
+                        </MudItem>
+                        <MudItem xs="1">
+                            <MudText>
+                                <strong>2</strong>
+                            </MudText>
+                        </MudItem>
+                    </MudGrid>
+                </MudPaper>
+
+                <MudPaper Elevation="0" Class="rounded mt-4 mb-10" Style="background-color: aliceblue;">
+                    <MudGrid Class="px-2">
+                        <MudItem xs="10">
+                            <MudText>Paul T.</MudText>
+                        </MudItem>
+                        <MudItem xs="1">
+                            <MudText>
+                                <strong>1</strong>
+                            </MudText>
+                        </MudItem>
+                    </MudGrid>
+                    <MudGrid Class="px-2">
+                        <MudItem xs="10">
+                            <MudText>
+                                <strong>Evans D.</strong>
+                            </MudText>
+                        </MudItem>
+                        <MudItem xs="1">
+                            <MudText>
+                                <strong>2</strong>
+                            </MudText>
+                        </MudItem>
+                    </MudGrid>
+                </MudPaper>
+            </MudItem>
+            <MudItem xs="1"></MudItem>
+        </MudGrid>
+    </MudTabPanel>
+    <MudTabPanel Text="RESULTS">
+        <MudText Typo="Typo.h6" Class="pl-1 mt-2">
+            <strong>Semi-finals</strong>
+        </MudText>
+
+        <MudDivider Class="mt-2" />
+
+        <MudPaper Class="mt-4 pl-1" Elevation="0">
+            <MudGrid>
+                <MudItem Class="d-flex align-center" xs="2">
+                    <MudText Style="color: #555E61;">14.08.</MudText>
+                </MudItem>
+                <MudItem xs="10">
+                    <MudGrid>
+                        <MudItem Class="d-flex align-center" xs="3">
+                            <MudImage Fluid="true" Src="https://res.cloudinary.com/djokeracloud/image/upload/v1660044148/tennid-dream-team/germany_ku2xlt.png" Alt="Germany" Class="rounded-lg" />
+                        </MudItem>
+                        <MudItem Class="d-flex align-center" xs="7">
+                            <MudText>
+                                <strong>Carreno-Busta P.</strong>
+                            </MudText>
+                        </MudItem>
+                        <MudItem Class="d-flex align-center" xs="2">
+                            <MudText Align="Align.End">
+                                <strong>2</strong>
+                            </MudText>
+                        </MudItem>
+                    </MudGrid>
+                    <MudGrid>
+                        <MudItem Class="d-flex align-center" xs="3">
+                            <MudImage Fluid="true" Src="https://res.cloudinary.com/djokeracloud/image/upload/v1660044148/tennid-dream-team/germany_ku2xlt.png" Alt="Germany" Class="rounded-lg" />
+                        </MudItem>
+                        <MudItem Class="d-flex align-center" xs="7">
+                            <MudText>
+                                Evans D.
+                            </MudText>
+                        </MudItem>
+                        <MudItem Class="d-flex align-center" xs="2">
+                            <MudText Align="Align.End">
+                                <strong>1</strong>
+                            </MudText>
+                        </MudItem>
+                    </MudGrid>
+                </MudItem>
+            </MudGrid>
+        </MudPaper>
+
+        <MudDivider Class="mt-2" />
+
+        <MudPaper Class="mt-4 pl-1" Elevation="0">
+            <MudGrid>
+                <MudItem Class="d-flex align-center" xs="2">
+                    <MudText Style="color: #555E61;">14.08.</MudText>
+                </MudItem>
+                <MudItem xs="10">
+                    <MudGrid>
+                        <MudItem Class="d-flex align-center" xs="3">
+                            <MudImage Fluid="true" Src="https://res.cloudinary.com/djokeracloud/image/upload/v1660044148/tennid-dream-team/germany_ku2xlt.png" Alt="Germany" Class="rounded-lg" />
+                        </MudItem>
+                        <MudItem Class="d-flex align-center" xs="7">
+                            <MudText>
+                                <strong>Carreno-Busta P.</strong>
+                            </MudText>
+                        </MudItem>
+                        <MudItem Class="d-flex align-center" xs="2">
+                            <MudText Align="Align.End">
+                                <strong>2</strong>
+                            </MudText>
+                        </MudItem>
+                    </MudGrid>
+                    <MudGrid>
+                        <MudItem Class="d-flex align-center" xs="3">
+                            <MudImage Fluid="true" Src="https://res.cloudinary.com/djokeracloud/image/upload/v1660044148/tennid-dream-team/germany_ku2xlt.png" Alt="Germany" Class="rounded-lg" />
+                        </MudItem>
+                        <MudItem Class="d-flex align-center" xs="7">
+                            <MudText>
+                                Evans D.
+                            </MudText>
+                        </MudItem>
+                        <MudItem Class="d-flex align-center" xs="2">
+                            <MudText Align="Align.End">
+                                <strong>1</strong>
+                            </MudText>
+                        </MudItem>
+                    </MudGrid>
+                </MudItem>
+            </MudGrid>
+        </MudPaper>
+
+        <MudDivider Class="mt-2" />
+
+        <MudText Typo="Typo.h6" Class="pl-1 mt-2">
+            <strong>Quarter-finals</strong>
+        </MudText>
+
+        <MudDivider Class="mt-2" />
+
+        <MudPaper Class="mt-4 pl-1" Elevation="0">
+            <MudGrid>
+                <MudItem Class="d-flex align-center" xs="2">
+                    <MudText Style="color: #555E61;">14.08.</MudText>
+                </MudItem>
+                <MudItem xs="10">
+                    <MudGrid>
+                        <MudItem Class="d-flex align-center" xs="3">
+                            <MudImage Fluid="true" Src="https://res.cloudinary.com/djokeracloud/image/upload/v1660044148/tennid-dream-team/germany_ku2xlt.png" Alt="Germany" Class="rounded-lg" />
+                        </MudItem>
+                        <MudItem Class="d-flex align-center" xs="7">
+                            <MudText>
+                                <strong>Carreno-Busta P.</strong>
+                            </MudText>
+                        </MudItem>
+                        <MudItem Class="d-flex align-center" xs="2">
+                            <MudText Align="Align.End">
+                                <strong>2</strong>
+                            </MudText>
+                        </MudItem>
+                    </MudGrid>
+                    <MudGrid>
+                        <MudItem Class="d-flex align-center" xs="3">
+                            <MudImage Fluid="true" Src="https://res.cloudinary.com/djokeracloud/image/upload/v1660044148/tennid-dream-team/germany_ku2xlt.png" Alt="Germany" Class="rounded-lg" />
+                        </MudItem>
+                        <MudItem Class="d-flex align-center" xs="7">
+                            <MudText>
+                                Evans D.
+                            </MudText>
+                        </MudItem>
+                        <MudItem Class="d-flex align-center" xs="2">
+                            <MudText Align="Align.End">
+                                <strong>1</strong>
+                            </MudText>
+                        </MudItem>
+                    </MudGrid>
+                </MudItem>
+            </MudGrid>
+        </MudPaper>
+
+        <MudDivider Class="mt-2" />
+
+        <MudPaper Class="mt-4 pl-1" Elevation="0">
+            <MudGrid>
+                <MudItem Class="d-flex align-center" xs="2">
+                    <MudText Style="color: #555E61;">14.08.</MudText>
+                </MudItem>
+                <MudItem xs="10">
+                    <MudGrid>
+                        <MudItem Class="d-flex align-center" xs="3">
+                            <MudImage Fluid="true" Src="https://res.cloudinary.com/djokeracloud/image/upload/v1660044148/tennid-dream-team/germany_ku2xlt.png" Alt="Germany" Class="rounded-lg" />
+                        </MudItem>
+                        <MudItem Class="d-flex align-center" xs="7">
+                            <MudText>
+                                <strong>Carreno-Busta P.</strong>
+                            </MudText>
+                        </MudItem>
+                        <MudItem Class="d-flex align-center" xs="2">
+                            <MudText Align="Align.End">
+                                <strong>2</strong>
+                            </MudText>
+                        </MudItem>
+                    </MudGrid>
+                    <MudGrid>
+                        <MudItem Class="d-flex align-center" xs="3">
+                            <MudImage Fluid="true" Src="https://res.cloudinary.com/djokeracloud/image/upload/v1660044148/tennid-dream-team/germany_ku2xlt.png" Alt="Germany" Class="rounded-lg" />
+                        </MudItem>
+                        <MudItem Class="d-flex align-center" xs="7">
+                            <MudText>
+                                Evans D.
+                            </MudText>
+                        </MudItem>
+                        <MudItem Class="d-flex align-center" xs="2">
+                            <MudText Align="Align.End">
+                                <strong>1</strong>
+                            </MudText>
+                        </MudItem>
+                    </MudGrid>
+                </MudItem>
+            </MudGrid>
+        </MudPaper>
+
+        <MudDivider Class="mt-2" />
+
+        <MudPaper Class="mt-4 pl-1" Elevation="0">
+            <MudGrid>
+                <MudItem Class="d-flex align-center" xs="2">
+                    <MudText Style="color: #555E61;">14.08.</MudText>
+                </MudItem>
+                <MudItem xs="10">
+                    <MudGrid>
+                        <MudItem Class="d-flex align-center" xs="3">
+                            <MudImage Fluid="true" Src="https://res.cloudinary.com/djokeracloud/image/upload/v1660044148/tennid-dream-team/germany_ku2xlt.png" Alt="Germany" Class="rounded-lg" />
+                        </MudItem>
+                        <MudItem Class="d-flex align-center" xs="7">
+                            <MudText>
+                                <strong>Carreno-Busta P.</strong>
+                            </MudText>
+                        </MudItem>
+                        <MudItem Class="d-flex align-center" xs="2">
+                            <MudText Align="Align.End">
+                                <strong>2</strong>
+                            </MudText>
+                        </MudItem>
+                    </MudGrid>
+                    <MudGrid>
+                        <MudItem Class="d-flex align-center" xs="3">
+                            <MudImage Fluid="true" Src="https://res.cloudinary.com/djokeracloud/image/upload/v1660044148/tennid-dream-team/germany_ku2xlt.png" Alt="Germany" Class="rounded-lg" />
+                        </MudItem>
+                        <MudItem Class="d-flex align-center" xs="7">
+                            <MudText>
+                                Evans D.
+                            </MudText>
+                        </MudItem>
+                        <MudItem Class="d-flex align-center" xs="2">
+                            <MudText Align="Align.End">
+                                <strong>1</strong>
+                            </MudText>
+                        </MudItem>
+                    </MudGrid>
+                </MudItem>
+            </MudGrid>
+        </MudPaper>
+
+        <MudDivider Class="mt-2" />
+
+        <MudPaper Class="mt-4 pl-1" Elevation="0">
+            <MudGrid>
+                <MudItem Class="d-flex align-center" xs="2">
+                    <MudText Style="color: #555E61;">14.08.</MudText>
+                </MudItem>
+                <MudItem xs="10">
+                    <MudGrid>
+                        <MudItem Class="d-flex align-center" xs="3">
+                            <MudImage Fluid="true" Src="https://res.cloudinary.com/djokeracloud/image/upload/v1660044148/tennid-dream-team/germany_ku2xlt.png" Alt="Germany" Class="rounded-lg" />
+                        </MudItem>
+                        <MudItem Class="d-flex align-center" xs="7">
+                            <MudText>
+                                <strong>Carreno-Busta P.</strong>
+                            </MudText>
+                        </MudItem>
+                        <MudItem Class="d-flex align-center" xs="2">
+                            <MudText Align="Align.End">
+                                <strong>2</strong>
+                            </MudText>
+                        </MudItem>
+                    </MudGrid>
+                    <MudGrid>
+                        <MudItem Class="d-flex align-center" xs="3">
+                            <MudImage Fluid="true" Src="https://res.cloudinary.com/djokeracloud/image/upload/v1660044148/tennid-dream-team/germany_ku2xlt.png" Alt="Germany" Class="rounded-lg" />
+                        </MudItem>
+                        <MudItem Class="d-flex align-center" xs="7">
+                            <MudText>
+                                Evans D.
+                            </MudText>
+                        </MudItem>
+                        <MudItem Class="d-flex align-center" xs="2">
+                            <MudText Align="Align.End">
+                                <strong>1</strong>
+                            </MudText>
+                        </MudItem>
+                    </MudGrid>
+                </MudItem>
+            </MudGrid>
+        </MudPaper>
+
+        <MudDivider Class="mt-2" />
+    </MudTabPanel>
+    <MudTabPanel Text="FIXTURES">
+         <MudText Typo="Typo.h6" Class="pl-1 mt-2">
+            <strong>Semi-finals</strong>
+        </MudText>
+
+        <MudDivider Class="mt-2" />
+
+        <MudPaper Class="mt-4 pl-1" Elevation="0">
+            <MudGrid>
+                <MudItem Class="d-flex align-center" xs="2">
+                    <MudText Style="color: #555E61;">14.08.</MudText>
+                </MudItem>
+                <MudItem xs="10">
+                    <MudGrid>
+                        <MudItem Class="d-flex align-center" xs="3">
+                            <MudImage Fluid="true" Src="https://res.cloudinary.com/djokeracloud/image/upload/v1660044148/tennid-dream-team/germany_ku2xlt.png" Alt="Germany" Class="rounded-lg" />
+                        </MudItem>
+                        <MudItem Class="d-flex align-center" xs="9">
+                            <MudText>
+                                <strong>Carreno-Busta P.</strong>
+                            </MudText>
+                        </MudItem>
+                    </MudGrid>
+                    <MudGrid>
+                        <MudItem Class="d-flex align-center" xs="3">
+                            <MudImage Fluid="true" Src="https://res.cloudinary.com/djokeracloud/image/upload/v1660044148/tennid-dream-team/germany_ku2xlt.png" Alt="Germany" Class="rounded-lg" />
+                        </MudItem>
+                        <MudItem Class="d-flex align-center" xs="9">
+                            <MudText>
+                                Evans D.
+                            </MudText>
+                        </MudItem>
+                    </MudGrid>
+                </MudItem>
+            </MudGrid>
+        </MudPaper>
+
+        <MudDivider Class="mt-2" />
+
+        <MudPaper Class="mt-4 pl-1" Elevation="0">
+            <MudGrid>
+                <MudItem Class="d-flex align-center" xs="2">
+                    <MudText Style="color: #555E61;">14.08.</MudText>
+                </MudItem>
+                <MudItem xs="10">
+                    <MudGrid>
+                        <MudItem Class="d-flex align-center" xs="3">
+                            <MudImage Fluid="true" Src="https://res.cloudinary.com/djokeracloud/image/upload/v1660044148/tennid-dream-team/germany_ku2xlt.png" Alt="Germany" Class="rounded-lg" />
+                        </MudItem>
+                        <MudItem Class="d-flex align-center" xs="9">
+                            <MudText>
+                                <strong>Carreno-Busta P.</strong>
+                            </MudText>
+                        </MudItem>
+                    </MudGrid>
+                    <MudGrid>
+                        <MudItem Class="d-flex align-center" xs="3">
+                            <MudImage Fluid="true" Src="https://res.cloudinary.com/djokeracloud/image/upload/v1660044148/tennid-dream-team/germany_ku2xlt.png" Alt="Germany" Class="rounded-lg" />
+                        </MudItem>
+                        <MudItem Class="d-flex align-center" xs="9">
+                            <MudText>
+                                Evans D.
+                            </MudText>
+                        </MudItem>
+                    </MudGrid>
+                </MudItem>
+            </MudGrid>
+        </MudPaper>
+
+        <MudDivider Class="mt-2" />
+    </MudTabPanel>
+</MudTabs>
