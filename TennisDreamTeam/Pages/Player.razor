@@ -2,9 +2,9 @@
 
 <PageTitle>Daniil Medvedev</PageTitle>
 
-<MudGrid>
+<MudGrid Class="pl-0">
     <MudItem Style="background:#C0C0C0;" xs="12">
-            <MudGrid>
+            <MudGrid Class="pl-3" >
                 <MudItem xs="12">
                     <MudText Typo="Typo.body2">Russia</MudText>
                 </MudItem>
@@ -23,9 +23,8 @@
                 </MudItem>
             </MudGrid>
     </MudItem>
-    <MudDivider />
     <MudItem Style="background:#C0C0C0;" xs="12">
-        <MudGrid>
+        <MudGrid Class="pl-3">
             <MudItem xs="1">
                 <MudIcon Icon="@Icons.Filled.InsertChart" />
             </MudItem>
@@ -37,21 +36,240 @@
         </MudGrid>
     </MudItem>
     <MudItem xs="12">
-        <MudGrid>
-             <MudItem Style="color: rgba(255, 0, 0, 0.78); border-bottom:4px solid rgba(255, 0, 0, 0.78);" xs="4">
+        <MudGrid Class="pl-3">
+            @if (this.isResultsChoosed)
+            {
+                <MudItem Style="color: rgba(255, 0, 0, 0.78); border-bottom:4px solid rgba(255, 0, 0, 0.78);" xs="4">
                  Results
-             </MudItem>
-             <MudItem xs="4">
-                 News
-             </MudItem>
+                </MudItem>
+                <MudItem @onclick="ToggleState" xs="4">
+                    News
+                </MudItem>
+            }
+            else
+            {
+                <MudItem @onclick="ToggleState" xs="4">
+                 Results
+                </MudItem>
+                <MudItem xs="4" Style="color: rgba(255, 0, 0, 0.78); border-bottom:4px solid rgba(255, 0, 0, 0.78);">
+                    News
+                </MudItem>
+            }
         </MudGrid>
     </MudItem>
-    <MudItem xs="12">
-        <MudChip Color="Color.Error">Single</MudChip>
-        <MudChip Color="Color.Default">Doubles </MudChip>
-    </MudItem>
+    @if (this.isResultsChoosed)
+    {
+        <MudItem xs="12">
+        @if (this.isSingleChoosed)
+        {
+            <MudChip Class="ml-3" Color="Color.Error">Single</MudChip>
+            <MudChip OnClick="TogglePlayersType" Class="ml-3" Color="Color.Default">Doubles </MudChip>
+
+        }
+        else
+        {
+            <MudChip OnClick="TogglePlayersType" Class="ml-3" Color="Color.Default">Single</MudChip>
+            <MudChip Class="ml-3" Color="Color.Error">Doubles </MudChip>
+        }
+        </MudItem>
+        @if (isSingleChoosed)
+        {
+            <MudItem xs="12">
+                <MudGrid Class="pl-3">
+                    <MudItem Style="background:#C0C0C0;" xs="12">
+                         <MudGrid Class="align-center">
+                             <MudItem xs="3">
+                                 <MudImage Fluid="true" Src="https://upload.wikimedia.org/wikipedia/en/8/82/Cincinnati_Masters_logo.svg" Alt="Open Cincinnati" />
+                             </MudItem>
+                             <MudItem xs="9">
+                                 <MudText Style="font-weight:bolder" Typo="Typo.body1">
+                                     Cincinnatii ATR, hard
+                                 </MudText>
+                                 <MudGrid Class="align-center">
+                                     <MudItem xs="3">
+                                         <MudImage Fluid="true" Src="https://cdn-icons-png.flaticon.com/512/555/555526.png" Alt="USA"/>
+                                     </MudItem>
+                                     <MudItem>
+                                         <MudText Typo="Typo.body2">
+                                              USA
+                                         </MudText>
+                                     </MudItem>
+                                 </MudGrid>
+                             </MudItem>
+                         </MudGrid>
+                    </MudItem>
+                    <MudItem xs="12">
+                         <MudGrid Class="align-center">
+                             <MudItem xs="2">
+                                 <MudText Typo="Typo.body2">
+                                     17.08.
+                                 </MudText>
+                             </MudItem>
+                             <MudItem xs="7">
+                                 <MudGrid>
+                                     <MudItem Class="py-0" xs="12">
+                                        <MudGrid Class="align-center">
+                                            <MudItem Class="pb-0" xs="3">
+                                                <MudImage Fluid="true" Src="https://cdn-icons-png.flaticon.com/512/555/555526.png" Alt="USA"/>
+                                            </MudItem>
+                                            <MudItem xs="9">
+                                                <MudText Typo="Typo.body2">
+                                                     Medvedev
+                                                </MudText>
+                                            </MudItem>
+                                        </MudGrid>
+                                     </MudItem>
+                                     <MudItem Class="pt-1" xs="12">
+                                     <MudGrid Class="align-center">
+                                         <MudItem Class="pt-0" xs="3">
+                                             <MudImage Fluid="true" Src="https://cdn-icons-png.flaticon.com/512/555/555526.png" Alt="USA"/>
+                                         </MudItem>
+                                         <MudItem xs="9">
+                                             <MudText Typo="Typo.body2">
+                                                  Van Den Zandschulp
+                                             </MudText>
+                                         </MudItem>
+                                     </MudGrid>
+                                     </MudItem>
+                                 </MudGrid>
+                             </MudItem>
+                             <MudItem xs="2">
+                                 <MudText Typo="Typo.body2">
+                                     17:00
+                                 </MudText>
+                             </MudItem>
+                         </MudGrid>
+                    </MudItem>
+                </MudGrid>
+            </MudItem>
+        }
+        else
+        {
+            <MudItem xs="12">
+                <MudGrid Style="height:220px" Class="pl-3">
+                <MudItem Style="background:#C0C0C0;" xs="12">
+                     <MudGrid Class="align-center">
+                         <MudItem xs="3">
+                             <MudImage Fluid="true" Src="https://upload.wikimedia.org/wikipedia/en/8/82/Cincinnati_Masters_logo.svg" Alt="Open Cincinnati" />
+                         </MudItem>
+                         <MudItem xs="9">
+                             <MudText Style="font-weight:bolder" Typo="Typo.body1">
+                                 Cincinnatii ATR, hard
+                             </MudText>
+                             <MudGrid Class="align-center">
+                                 <MudItem xs="3">
+                                     <MudImage Fluid="true" Src="https://cdn-icons-png.flaticon.com/512/555/555526.png" Alt="USA"/>
+                                 </MudItem>
+                                 <MudItem xs="9">
+                                     <MudText Typo="Typo.body2">
+                                          USA
+                                     </MudText>
+                                 </MudItem>
+                             </MudGrid>
+                         </MudItem>
+                     </MudGrid>
+                </MudItem>
+                <MudItem xs="12">
+                     <MudGrid Class="align-center">
+                         <MudItem xs="2">
+                             <MudText Typo="Typo.body2">
+                                 14.06.
+                             </MudText>
+                         </MudItem>
+                         <MudItem xs="7">
+                             <MudGrid>
+                                 <MudItem Class="py-0" xs="12">
+                                    <MudGrid Class="align-center">
+                                        <MudItem xs="12">
+                                            <MudGrid Class="align-center">
+                                                <MudItem Class="pb-0" xs="10">
+                                                    <MudText Typo="Typo.body2">
+                                                        Auger-Aliassime/Medvedev
+                                                    </MudText>
+                                                </MudItem>
+                                                <MudItem xs="2">
+                                                    <MudText Typo="Typo.body2">
+                                                        0
+                                                    </MudText>
+                                                </MudItem>
+                                            </MudGrid>
+                                        </MudItem>
+                                        <MudItem Class="pt-5" xs="12">
+                                            <MudGrid Class="align-center">
+                                                <MudItem Class="pt-0" xs="10">
+                                                    <MudText Typo="Typo.body2">
+                                                        Aravelo M./Jean-Julien Roger
+                                                    </MudText>
+                                                </MudItem>
+                                                <MudItem xs="2">
+                                                    <MudText Typo="Typo.body2">
+                                                        2
+                                                    </MudText>
+                                                </MudItem>
+                                            </MudGrid>
+                                        </MudItem>
+                                    </MudGrid>
+                                 </MudItem>
+                             </MudGrid>
+                         </MudItem>
+                         <MudItem xs="2">
+                             <MudText Typo="Typo.body2">
+                                 <MudPaper Class="d-flex justify-center" Style="color:white; background:red">
+                                     3
+                                 </MudPaper>
+                             </MudText>
+                         </MudItem>
+                     </MudGrid>
+                </MudItem>
+            </MudGrid>
+            </MudItem>
+        }
+    }
+    else
+    {
+        <MudItem xs="12">
+            <MudGrid Class="pl-3">
+                <MudItem xs="3">
+                    <MudImage Fluid="true" Class="rounded" Src="https://tennis.bg/uploaded/posts/fa1618d04bd33525cc2834542bef3c5b.jpg" Alt="Medvedev" />
+                </MudItem>
+                <MudItem xs="9">
+                    <MudText Typo="Typo.body1" Style="font-size:80%;font-weight:bolder;">
+                        Medvedev range with fan, called him looser(VIDEO)
+                    </MudText>
+                    <MudText Typo="Typo.body1" Style="font-size:70%;color:#C0C0C0;font-weight:bolder;">
+                        14.08.2022, dsport.bg
+                    </MudText>
+                </MudItem>
+            </MudGrid>
+            <MudGrid Class="pl-3">
+                <MudItem xs="3">
+                    <MudImage Fluid="true" Class="rounded" Src="https://m5.netinfo.bg/media/images/41518/41518627/960-600-nik-kirios.jpg" Alt="Kirios" />
+                </MudItem>
+                <MudItem xs="9">
+                    <MudText Typo="Typo.body1" Style="font-size:80%;font-weight:bolder;">
+                        Kirios keeps shining with confident win over Den Minor
+                    </MudText>
+                    <MudText Typo="Typo.body1" Style="font-size:70%;color:#C0C0C0;font-weight:bolder;">
+                        12.08.2022, Gong.bg
+                    </MudText>
+                </MudItem>
+            </MudGrid>
+        </MudItem>
+    }
 </MudGrid>
 
-@code {
 
+@code {
+    private bool isSingleChoosed = true;
+    private bool isResultsChoosed = true;
+
+    private void TogglePlayersType()
+    {
+        this.isSingleChoosed = !this.isSingleChoosed;
+    }
+
+    private void ToggleState()
+    {
+        this.isResultsChoosed = !this.isResultsChoosed;
+    }
 }
