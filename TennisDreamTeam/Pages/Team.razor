@@ -1,313 +1,779 @@
 ﻿@page "/team"
 
-<PageTitle>My Team</PageTitle>
+<PageTitle>Your Team</PageTitle>
 
-<MudPaper Class="mt-4 mx-2" Elevation="0" Style="background-color: #1EC8A5;">
-    <MudGrid Class="px-1">
-        <MudItem Class="d-flex justify-center align-center" xs="3">
-            <MudText Style="font-size: 10px; color: #fff">
-                <strong>TEAM VALUE: 80M</strong>
+<MudPaper Class="mt-6" Style="background-color: #02563C;" Elevation="0">
+    <MudGrid Class="pb-2">
+        <MudItem Class="d-flex justify-center" xs="4">
+            <MudIcon Size="Size.Large" Style="color: #fff;" Icon="@Icons.Filled.People"></MudIcon>
+        </MudItem>
+
+        <MudDivider Vertical="true" FlexItem="true" />
+
+        <MudItem Class="d-flex justify-center" xs="4">
+            <MudIcon Size="Size.Large" Style="color: #fff;" Icon="@Icons.Filled.WineBar"></MudIcon>
+        </MudItem>
+
+        <MudDivider Vertical="true" FlexItem="true" />
+
+        <MudItem Class="d-flex justify-center" xs="3">
+            <MudIcon Size="Size.Large" Style="color: #fff;" Icon="@Icons.Filled.ConnectWithoutContact"></MudIcon>
+        </MudItem>
+    </MudGrid>
+
+    <MudDivider Class="mt-2" Style="background-color: #D76316; block-size: 3px; border: none;" />
+
+    <MudCarousel Class="mud-width-full mt-3" Style="block-size: 50px; color: #fff;" ShowArrows="true" ShowBullets="false" AutoCycle="false" TData="object">
+        <MudCarouselItem Transition="Transition.Slide" Style="background-color: #02563C;">
+            <div class="d-flex" style="block-size: 100%;">
+                <MudPaper Class="mx-auto my-auto d-flex align-center justify-center" style="background-color: #02563C;">
+                    <MudMenu MaxHeight="200">
+                        <ActivatorContent>
+                            <MudFab DisableElevation="true" Style="color: #fff; background-color: #02563C;" EndIcon="@Icons.Filled.ArrowDownward" Label="GW36" />
+                        </ActivatorContent>
+                        <ChildContent>
+                            <MudText Class="pa-3">
+                                <strong>Game Week</strong>
+                            </MudText>
+
+                            <MudDivider Class="mt-2" />
+
+                            <MudPaper Elevation="0" Style="background-color: skyblue;">
+                                <MudText Class="pa-3">
+                                    <strong>GW36</strong>
+                                </MudText>
+                            </MudPaper>
+
+                            <MudDivider Class="mt-2" />
+
+                            <MudPaper Elevation="0">
+                                <MudText Class="pa-3">
+                                    <strong>GW35</strong>
+                                </MudText>
+                            </MudPaper>
+
+                            <MudDivider Class="mt-2" />
+
+                            <MudPaper Elevation="0">
+                                <MudText Class="pa-3">
+                                    <strong>GW34</strong>
+                                </MudText>
+                            </MudPaper>
+
+                            <MudDivider Class="mt-2" />
+
+                            <MudPaper Elevation="0">
+                                <MudText Class="pa-3">
+                                    <strong>GW33</strong>
+                                </MudText>
+                            </MudPaper>
+
+                            <MudDivider Class="mt-2" />
+
+                            <MudPaper Elevation="0">
+                                <MudText Class="pa-3">
+                                    <strong>GW32</strong>
+                                </MudText>
+                            </MudPaper>
+
+                            <MudDivider Class="mt-2" />
+
+                            <MudPaper Elevation="0">
+                                <MudText Class="pa-3">
+                                    <strong>GW31</strong>
+                                </MudText>
+                            </MudPaper>
+
+                            <MudDivider Class="mt-2" />
+
+                             <MudPaper Elevation="0">
+                                <MudText Class="pa-3">
+                                    <strong>GW30</strong>
+                                </MudText>
+                            </MudPaper>
+
+                            <MudDivider Class="mt-2" />
+
+                            <MudPaper Elevation="0">
+                                <MudText Class="pa-3">
+                                    <strong>GW29</strong>
+                                </MudText>
+                            </MudPaper>
+
+                            <MudDivider Class="mt-2" />
+                        </ChildContent>
+                    </MudMenu>
+                </MudPaper>
+            </div>
+        </MudCarouselItem>
+    </MudCarousel>
+</MudPaper>
+
+<MudGrid Class="mt-6">
+    <MudItem Class="d-flex justify-center" xs="6">
+        <div style="background-color: #02563C; border-radius: 50%; block-size: 100px; inline-size: 100px;">
+            <MudText Class="mx-auto my-auto" Style="color: #fff; font-size: 25px; position: relative; inset-block-start: 30%; inset-inline-start: 28%;">
+                <strong>118</strong>
             </MudText>
-        </MudItem>
-        <MudItem Class="d-flex justify-center align-center" xs="3">
-            <MudText Style="font-size: 10px; color: #fff">
-                <strong>REMAINING CASH: 80M</strong>
+        </div>
+    </MudItem>
+    <MudItem Class="d-flex justify-center" xs="6">
+        <div style="background-color: #D76316; border-radius: 50%; block-size: 100px; inline-size: 100px;">
+            <MudText Class="mx-auto my-auto" Style="color: #fff; font-size: 25px; position: relative; inset-block-start: 30%; inset-inline-start: 28%;">
+                <strong>425</strong>
             </MudText>
-        </MudItem>
-        <MudItem Class="d-flex justify-center align-center" xs="3">
-            <MudText Style="font-size: 10px; color: #fff;">
-                <strong>P: 5432</strong>
+        </div>
+    </MudItem>
+</MudGrid>
+
+<MudGrid Class="mt-3">
+    <MudItem Class="d-flex justify-center" xs="6">
+        <MudText>
+            <strong>GW36 POINTS</strong>
+        </MudText>
+    </MudItem>
+    <MudItem Class="d-flex justify-center" xs="6">
+        <MudText>
+            <strong>TOTAL POINTS</strong>
+        </MudText>
+    </MudItem>
+</MudGrid>
+
+<MudFab Class="mt-5 d-flex justify-center mx-auto" DisableElevation="true" Style="background-color: #fff; color: #02563C;" StartIcon="@Icons.Filled.ContactSupport" Label="YOUR TENNIS BALLS" />
+
+<MudGrid Class="mt-2">
+    <MudItem xs="1"></MudItem>
+    <MudItem Class="d-flex justify-center" xs="1">
+        <MudIcon Icon="@Icons.Filled.SportsBaseball" Style="color: #DDC821;" Size="Size.Small"></MudIcon>
+    </MudItem>
+    <MudItem Class="d-flex justify-center" xs="1">
+        <MudIcon Icon="@Icons.Filled.SportsBaseball" Style="color: #DDC821;" Size="Size.Small"></MudIcon>
+    </MudItem>
+    <MudItem Class="d-flex justify-center" xs="1">
+        <MudIcon Icon="@Icons.Filled.SportsBaseball" Style="color: #DDC821;" Size="Size.Small"></MudIcon>
+    </MudItem>
+    <MudItem Class="d-flex justify-center" xs="1">
+        <MudIcon Icon="@Icons.Filled.SportsBaseball" Style="color: #DDC821;" Size="Size.Small"></MudIcon>
+    </MudItem>
+    <MudItem Class="d-flex justify-center" xs="1">
+        <MudIcon Icon="@Icons.Filled.SportsBaseball" Style="color: #DDC821;" Size="Size.Small"></MudIcon>
+    </MudItem>
+    <MudItem Class="d-flex justify-center" xs="1">
+        <MudIcon Icon="@Icons.Filled.SportsBaseball" Style="color: #DDC821;" Size="Size.Small"></MudIcon>
+    </MudItem>
+    <MudItem Class="d-flex justify-center" xs="1">
+        <MudIcon Icon="@Icons.Filled.SportsBaseball" Style="color: #DDC821;" Size="Size.Small"></MudIcon>
+    </MudItem>
+    <MudItem Class="d-flex justify-center" xs="1">
+        <MudIcon Icon="@Icons.Filled.SportsBaseball" Style="color: #DDC821;" Size="Size.Small"></MudIcon>
+    </MudItem>
+    <MudItem Class="d-flex justify-center" xs="1">
+        <MudIcon Icon="@Icons.Filled.SportsBaseball" Style="color: #DDC821; opacity: 0.3;" Color="Color.Warning" Size="Size.Small"></MudIcon>
+    </MudItem>
+    <MudItem Class="d-flex justify-center" xs="1">
+        <MudIcon Icon="@Icons.Filled.SportsBaseball" Style="color: #DDC821; opacity: 0.3;" Color="Color.Warning" Size="Size.Small"></MudIcon>
+    </MudItem>
+    <MudItem xs="1"></MudItem>
+</MudGrid>
+
+<MudDrawerContainer Style="overflow-x: hidden;">
+    <MudDrawer @bind-Open="@open" Elevation="0" Variant="@DrawerVariant.Responsive" Style="background-color: #D8D6D9; overflow-x: hidden;">
+        <MudDrawerHeader Style="background-color: #02563C;">
+            <MudText Typo="Typo.h6" Style="color: #fff;">PLAYERS</MudText>
+        </MudDrawerHeader>
+        <MudNavMenu>
+            <MudRadioGroup Class="mt-5" @bind-SelectedOption="@SelectedOption">
+                <MudGrid Class="px-2">
+                    <MudItem Class="d-flex justify-center" xs="6">
+                        <MudRadio Option="@("Radio 1")" Color="Color.Warning" Dense="true" Size="Size.Small"><strong>GENTLEMEN</strong></MudRadio>
+                    </MudItem>
+                    <MudItem Class="d-flex justify-center" xs="6">
+                        <MudRadio Option="@("Radio 2")" Color="Color.Warning" Dense="true" Size="Size.Small"><strong>LADIES</strong></MudRadio>
+                    </MudItem>
+                </MudGrid>
+            </MudRadioGroup>
+
+            <MudGrid Class="mt-3">
+                <MudItem xs="2"></MudItem>
+                <MudItem Class="d-flex justify-center" xs="8">
+                    <MudTextField @bind-Value="Search" Label="Search" Variant="Variant.Text" Adornment="Adornment.End" AdornmentIcon="@Icons.Filled.Search" />
+                </MudItem>
+                <MudItem xs="2"></MudItem>
+            </MudGrid>
+
+            <MudGrid>
+                <MudItem xs="1"></MudItem>
+                <MudItem Class="d-flex justify-center" xs="11">
+                    <MudCheckBox @bind-Checked="@Label_CheckBox3" Label="BOUGHT PLAYERS" Color="Color.Warning"></MudCheckBox>
+                </MudItem>
+            </MudGrid>
+
+            <MudGrid Class="mb-8">
+                <MudItem xs="1"></MudItem>
+                <MudItem Class="d-flex justify-center" xs="11">
+                    <MudCheckBox @bind-Checked="@Label_CheckBox3" Label="ONLY ATP" Color="Color.Warning"></MudCheckBox>
+                </MudItem>
+            </MudGrid>
+
+            <MudGrid Class="mb-4" Style="background-color: #fff;">
+                <MudItem Class="d-flex justify-center align-center" xs="3">
+                    <MudImage Style="border-radius: 50%;" Fluid="true" Src="https://www.tennis24.com/res/image/data/tSfwGCdM-0rY6MEPI.png" Alt="Germany" />
+                </MudItem>
+                <MudItem xs="5">
+                     <MudGrid>
+                        <MudItem Class="d-flex align-center" xs="12">
+                            <MudText>
+                                <strong>N. DJOKOVIC</strong>
+                            </MudText>
+                        </MudItem>
+                        <MudItem Class="d-flex align-center" xs="12">
+                            <MudText Style="color: #555E61;">ATP 6</MudText>
+                        </MudItem>
+                    </MudGrid>
+                </MudItem>
+                <MudDivider Vertical="true" FlexItem="true" />
+                <MudItem xs="3">
+                    <MudGrid>
+                        <MudItem Class="d-flex justify-center align-center" xs="12">
+                            <MudText Style="color: #02563C;">
+                                <strong>20M</strong>
+                            </MudText>
+                        </MudItem>
+                        <MudItem Class="d-flex justify-center align-center" xs="12">
+                            <MudIcon Icon="@Icons.Filled.AddCircleOutline" Size="Size.Large" Color="Color.Warning"></MudIcon>
+                        </MudItem>
+                    </MudGrid>
+                </MudItem>
+            </MudGrid>
+
+            <MudGrid Class="mb-4" Style="background-color: #fff;">
+                <MudItem Class="d-flex justify-center align-center" xs="3">
+                    <MudImage Style="border-radius: 50%;" Fluid="true" Src="https://www.tennis24.com/res/image/data/tSfwGCdM-0rY6MEPI.png" Alt="Germany" />
+                </MudItem>
+                <MudItem xs="5">
+                     <MudGrid>
+                        <MudItem Class="d-flex align-center" xs="12">
+                            <MudText>
+                                <strong>N. DJOKOVIC</strong>
+                            </MudText>
+                        </MudItem>
+                        <MudItem Class="d-flex align-center" xs="12">
+                            <MudText Style="color: #555E61;">ATP 6</MudText>
+                        </MudItem>
+                    </MudGrid>
+                </MudItem>
+                <MudDivider Vertical="true" FlexItem="true" />
+                <MudItem xs="3">
+                    <MudGrid>
+                        <MudItem Class="d-flex justify-center align-center" xs="12">
+                            <MudText Style="color: #02563C;">
+                                <strong>20M</strong>
+                            </MudText>
+                        </MudItem>
+                        <MudItem Class="d-flex justify-center align-center" xs="12">
+                            <MudIcon Icon="@Icons.Filled.AddCircleOutline" Size="Size.Large" Color="Color.Warning"></MudIcon>
+                        </MudItem>
+                    </MudGrid>
+                </MudItem>
+            </MudGrid>
+
+            <MudGrid Class="mb-4" Style="background-color: #fff;">
+                <MudItem Class="d-flex justify-center align-center" xs="3">
+                    <MudImage Style="border-radius: 50%;" Fluid="true" Src="https://www.tennis24.com/res/image/data/tSfwGCdM-0rY6MEPI.png" Alt="Germany" />
+                </MudItem>
+                <MudItem xs="5">
+                     <MudGrid>
+                        <MudItem Class="d-flex align-center" xs="12">
+                            <MudText>
+                                <strong>N. DJOKOVIC</strong>
+                            </MudText>
+                        </MudItem>
+                        <MudItem Class="d-flex align-center" xs="12">
+                            <MudText Style="color: #555E61;">ATP 6</MudText>
+                        </MudItem>
+                    </MudGrid>
+                </MudItem>
+                <MudDivider Vertical="true" FlexItem="true" />
+                <MudItem xs="3">
+                    <MudGrid>
+                        <MudItem Class="d-flex justify-center align-center" xs="12">
+                            <MudText Style="color: #02563C;">
+                                <strong>20M</strong>
+                            </MudText>
+                        </MudItem>
+                        <MudItem Class="d-flex justify-center align-center" xs="12">
+                            <MudIcon Icon="@Icons.Filled.RemoveCircleOutline" Size="Size.Large"></MudIcon>
+                        </MudItem>
+                    </MudGrid>
+                </MudItem>
+            </MudGrid>
+
+            <MudGrid Class="mb-4" Style="background-color: #fff;">
+                <MudItem Class="d-flex justify-center align-center" xs="3">
+                    <MudImage Style="border-radius: 50%;" Fluid="true" Src="https://www.tennis24.com/res/image/data/tSfwGCdM-0rY6MEPI.png" Alt="Germany" />
+                </MudItem>
+                <MudItem xs="5">
+                     <MudGrid>
+                        <MudItem Class="d-flex align-center" xs="12">
+                            <MudText>
+                                <strong>N. DJOKOVIC</strong>
+                            </MudText>
+                        </MudItem>
+                        <MudItem Class="d-flex align-center" xs="12">
+                            <MudText Style="color: #555E61;">ATP 6</MudText>
+                        </MudItem>
+                    </MudGrid>
+                </MudItem>
+                <MudDivider Vertical="true" FlexItem="true" />
+                <MudItem xs="3">
+                    <MudGrid>
+                        <MudItem Class="d-flex justify-center align-center" xs="12">
+                            <MudText Style="color: #02563C;">
+                                <strong>20M</strong>
+                            </MudText>
+                        </MudItem>
+                        <MudItem Class="d-flex justify-center align-center" xs="12">
+                            <MudIcon Icon="@Icons.Filled.RemoveCircleOutline" Size="Size.Large"></MudIcon>
+                        </MudItem>
+                    </MudGrid>
+                </MudItem>
+            </MudGrid>
+
+            <MudGrid Class="mb-4" Style="background-color: #fff;">
+                <MudItem Class="d-flex justify-center align-center" xs="3">
+                    <MudImage Style="border-radius: 50%;" Fluid="true" Src="https://www.tennis24.com/res/image/data/tSfwGCdM-0rY6MEPI.png" Alt="Germany" />
+                </MudItem>
+                <MudItem xs="5">
+                     <MudGrid>
+                        <MudItem Class="d-flex align-center" xs="12">
+                            <MudText>
+                                <strong>N. DJOKOVIC</strong>
+                            </MudText>
+                        </MudItem>
+                        <MudItem Class="d-flex align-center" xs="12">
+                            <MudText Style="color: #555E61;">ATP 6</MudText>
+                        </MudItem>
+                    </MudGrid>
+                </MudItem>
+                <MudDivider Vertical="true" FlexItem="true" />
+                <MudItem xs="3">
+                    <MudGrid>
+                        <MudItem Class="d-flex justify-center align-center" xs="12">
+                            <MudText Style="color: #02563C;">
+                                <strong>20M</strong>
+                            </MudText>
+                        </MudItem>
+                        <MudItem Class="d-flex justify-center align-center" xs="12">
+                            <MudIcon Icon="@Icons.Filled.RemoveCircleOutline" Size="Size.Large"></MudIcon>
+                        </MudItem>
+                    </MudGrid>
+                </MudItem>
+            </MudGrid>
+
+            <MudGrid Class="mb-4" Style="background-color: #fff;">
+                <MudItem Class="d-flex justify-center align-center" xs="3">
+                    <MudImage Style="border-radius: 50%;" Fluid="true" Src="https://www.tennis24.com/res/image/data/tSfwGCdM-0rY6MEPI.png" Alt="Germany" />
+                </MudItem>
+                <MudItem xs="5">
+                     <MudGrid>
+                        <MudItem Class="d-flex align-center" xs="12">
+                            <MudText>
+                                <strong>N. DJOKOVIC</strong>
+                            </MudText>
+                        </MudItem>
+                        <MudItem Class="d-flex align-center" xs="12">
+                            <MudText Style="color: #555E61;">ATP 6</MudText>
+                        </MudItem>
+                    </MudGrid>
+                </MudItem>
+                <MudDivider Vertical="true" FlexItem="true" />
+                <MudItem xs="3">
+                    <MudGrid>
+                        <MudItem Class="d-flex justify-center align-center" xs="12">
+                            <MudText Style="color: #02563C;">
+                                <strong>20M</strong>
+                            </MudText>
+                        </MudItem>
+                        <MudItem Class="d-flex justify-center align-center" xs="12">
+                            <MudIcon Icon="@Icons.Filled.RemoveCircleOutline" Size="Size.Large"></MudIcon>
+                        </MudItem>
+                    </MudGrid>
+                </MudItem>
+            </MudGrid>
+
+            <MudGrid Class="mb-4" Style="background-color: #fff;">
+                <MudItem Class="d-flex justify-center align-center" xs="3">
+                    <MudImage Style="border-radius: 50%;" Fluid="true" Src="https://www.tennis24.com/res/image/data/tSfwGCdM-0rY6MEPI.png" Alt="Germany" />
+                </MudItem>
+                <MudItem xs="5">
+                     <MudGrid>
+                        <MudItem Class="d-flex align-center" xs="12">
+                            <MudText>
+                                <strong>N. DJOKOVIC</strong>
+                            </MudText>
+                        </MudItem>
+                        <MudItem Class="d-flex align-center" xs="12">
+                            <MudText Style="color: #555E61;">ATP 6</MudText>
+                        </MudItem>
+                    </MudGrid>
+                </MudItem>
+                <MudDivider Vertical="true" FlexItem="true" />
+                <MudItem xs="3">
+                    <MudGrid>
+                        <MudItem Class="d-flex justify-center align-center" xs="12">
+                            <MudText Style="color: #02563C;">
+                                <strong>20M</strong>
+                            </MudText>
+                        </MudItem>
+                        <MudItem Class="d-flex justify-center align-center" xs="12">
+                            <MudIcon Icon="@Icons.Filled.AddCircleOutline" Size="Size.Large" Color="Color.Warning"></MudIcon>
+                        </MudItem>
+                    </MudGrid>
+                </MudItem>
+            </MudGrid>
+
+            <MudGrid Class="mb-4" Style="background-color: #fff;">
+                <MudItem Class="d-flex justify-center align-center" xs="3">
+                    <MudImage Style="border-radius: 50%;" Fluid="true" Src="https://www.tennis24.com/res/image/data/tSfwGCdM-0rY6MEPI.png" Alt="Germany" />
+                </MudItem>
+                <MudItem xs="5">
+                     <MudGrid>
+                        <MudItem Class="d-flex align-center" xs="12">
+                            <MudText>
+                                <strong>N. DJOKOVIC</strong>
+                            </MudText>
+                        </MudItem>
+                        <MudItem Class="d-flex align-center" xs="12">
+                            <MudText Style="color: #555E61;">ATP 6</MudText>
+                        </MudItem>
+                    </MudGrid>
+                </MudItem>
+                <MudDivider Vertical="true" FlexItem="true" />
+                <MudItem xs="3">
+                    <MudGrid>
+                        <MudItem Class="d-flex justify-center align-center" xs="12">
+                            <MudText Style="color: #02563C;">
+                                <strong>20M</strong>
+                            </MudText>
+                        </MudItem>
+                        <MudItem Class="d-flex justify-center align-center" xs="12">
+                            <MudIcon Icon="@Icons.Filled.AddCircleOutline" Size="Size.Large" Color="Color.Warning"></MudIcon>
+                        </MudItem>
+                    </MudGrid>
+                </MudItem>
+            </MudGrid>
+
+            <MudGrid>
+                <MudItem xs="1"></MudItem>
+                <MudItem Class="d-flex justify-center" xs="10">
+                    <MudPagination Size="Size.Small" Color="Color.Success" BoundaryCount="2" MiddleCount="5" Count="122" @bind-Selected="@selected" />
+                </MudItem>
+                <MudItem xs="1"></MudItem>
+            </MudGrid>
+        </MudNavMenu>
+    </MudDrawer>
+    <MudFab OnClick="this.ToggleDrawer" Class="mt-5 d-flex justify-center mx-auto" DisableElevation="true" Style="color: #fff; background-color: #02563C;" StartIcon="@Icons.Filled.FormatListBulleted" Label="VIEW ALL PLAYERS" />
+</MudDrawerContainer>
+
+<MudGrid Class="mt-2 px-4 pb-6">
+    <MudItem xs="6">
+        <MudPaper Elevation="0" Style="background-color: #BAC0BE;">
+            <MudGrid >
+                <MudItem xs="3">
+                    <MudText Align="Align.Start">
+                        <strong>1</strong>
+                    </MudText>
+                </MudItem>
+                <MudItem xs="6"></MudItem>
+                <MudItem Class="d-flex justify-end" xs="3">
+                    <MudPaper Elevation="0" Style="background-color: #02563C; border-end-start-radius: 30px; padding: 5px;">
+                        <MudText Style="color: #fff;" Align="Align.Center">1921PT</MudText>
+                    </MudPaper>
+                </MudItem>
+            </MudGrid>
+
+            <MudGrid>
+                <MudItem xs="2"></MudItem>
+                <MudItem Class="d-flex justify-center align-center" xs="8">
+                    <MudImage Style="border: 2px #02563C solid; border-radius: 50%;" Fluid="true" Src="https://www.tennis24.com/res/image/data/tSfwGCdM-0rY6MEPI.png" Alt="Germany" />
+                </MudItem>
+                <MudItem xs="2"></MudItem>
+            </MudGrid>
+
+            <MudText Class="mt-1" Align="Align.Center">
+                <strong>N. DJOKOVIC</strong>
             </MudText>
-        </MudItem>
-        <MudItem Class="d-flex justify-center align-center" xs="3">
-            <MudText Style="font-size: 10px; color: #fff;">
-                <strong>RANK: #432</strong>
+            <MudText Style="font-size: 10px;" Align="Align.Center">
+                <em>VS WAWRINKA</em>
             </MudText>
-        </MudItem>
-    </MudGrid>
-</MudPaper>
+        </MudPaper>
 
-<MudPaper Class="mt-4 mx-2" Elevation="0" Style="background-color: #1EC8A5; border-radius: 20px;">
-    <MudGrid Class="pb-1">
-        <MudItem xs="6">
-            <MudGrid>
-                <MudItem Class="d-flex align-center" xs="5">
-                    <MudImage Style="border-radius: 50%;" Fluid="true" Src="https://www.tennis24.com/res/image/data/tSfwGCdM-0rY6MEPI.png" Alt="Germany" />
+        <MudGrid Class="mt-2">
+            <MudItem xs="3"></MudItem>
+            <MudItem Class="d-flex justify-center" xs="2">
+                <MudItem Class="d-flex justify-center" xs="1">
+                    <MudIcon Icon="@Icons.Filled.SportsBaseball" Style="color: #DDC821;" Size="Size.Small"></MudIcon>
                 </MudItem>
-                <MudItem xs="7">
-                    <MudGrid>
-                        <MudItem Class="d-flex align-center" xs="12">
-                            <MudText Style="font-size: 10px; color: #fff;">
-                                <em>N. Djokovic</em>
-                            </MudText>
-                        </MudItem>
-                        <MudItem Class="d-flex align-center" xs="12">
-                            <MudText Style="font-size: 10px; color: #fff;">
-                                <em>
-                                    vs Thiem
-                                </em>
-                            </MudText>
-                        </MudItem>
-                        <MudItem Class="d-flex align-center" xs="12">
-                            <MudText Style="font-size: 10px; color: #fff;">
-                                <em>French Open ATP</em>
-                            </MudText>
-                        </MudItem>
-                    </MudGrid>
+            </MudItem>
+            <MudItem Class="d-flex justify-center" xs="2">
+                <MudItem Class="d-flex justify-center" xs="1">
+                    <MudIcon Icon="@Icons.Filled.SportsBaseball" Style="color: #DDC821;" Size="Size.Small"></MudIcon>
                 </MudItem>
-            </MudGrid>
-            
-        </MudItem>
-        <MudDivider Vertical="true" FlexItem="true" />
-        <MudItem xs="5">
-            <MudGrid>
-                <MudItem xs="6">
-                    <MudGrid>
-                        <MudItem Class="d-flex align-center" xs="12">
-                            <MudText Style="font-size: 10px; color: #fff;">
-                                <strong>$11,200</strong>
-                            </MudText>
-                        </MudItem>
-                        <MudItem Class="d-flex align-center" xs="12">
-                            <MudText Style="font-size: 10px; color: #fff;">68.5p</MudText>
-                        </MudItem>
-                        <MudItem Class="d-flex align-center" xs="12">
-                            <MudText Style="font-size: 10px; color: #fff;">RANK: <strong>#3</strong></MudText>
-                        </MudItem>
-                    </MudGrid>
+            </MudItem>
+            <MudItem Class="d-flex justify-center" xs="2">
+                <MudItem Class="d-flex justify-center" xs="1">
+                    <MudIcon Icon="@Icons.Filled.SportsBaseball" Style="color: #DDC821; opacity: 0.3;" Color="Color.Warning" Size="Size.Small"></MudIcon>
                 </MudItem>
-                <MudItem Class="d-flex align-center" xs="6">
-                    <MudIconButton Icon="@Icons.Filled.GppBad" Style="color: #fff;" aria-label="delete"></MudIconButton>
-                </MudItem>
-            </MudGrid>
-        </MudItem>
-    </MudGrid>
-</MudPaper>
+            </MudItem>
+            <MudItem xs="3"></MudItem>
+        </MudGrid>
 
-<MudPaper Class="mt-4 mx-2" Elevation="0" Style="background-color: #1EC8A5; border-radius: 20px;">
-    <MudGrid Class="pb-1">
-        <MudItem xs="6">
-            <MudGrid>
-                <MudItem Class="d-flex align-center" xs="5">
-                    <MudImage Style="border-radius: 50%;" Fluid="true" Src="https://www.tennis24.com/res/image/data/tSfwGCdM-0rY6MEPI.png" Alt="Germany" />
+        <MudGrid Class="mt-2">
+            <MudItem xs="5"></MudItem>
+            <MudItem Class="d-flex justify-center" xs="2">
+                <div style="background-color: #02563C; padding-inline: 20px;">
+                    <MudText Align="Align.Center" Style="color: #fff;">x2</MudText>
+                </div>
+            </MudItem>
+            <MudItem xs="5"></MudItem>
+        </MudGrid>
+    </MudItem>
+    <MudItem xs="6">
+        <MudPaper Elevation="0" Style="background-color: #BAC0BE;">
+            <MudGrid >
+                <MudItem xs="3">
+                    <MudText Align="Align.Start">
+                        <strong>1</strong>
+                    </MudText>
                 </MudItem>
-                <MudItem xs="7">
-                    <MudGrid>
-                        <MudItem Class="d-flex align-center" xs="12">
-                            <MudText Style="font-size: 10px; color: #fff;">
-                                <em>N. Djokovic</em>
-                            </MudText>
-                        </MudItem>
-                        <MudItem Class="d-flex align-center" xs="12">
-                            <MudText Style="font-size: 10px; color: #fff;">
-                                <em>
-                                    vs Thiem
-                                </em>
-                            </MudText>
-                        </MudItem>
-                        <MudItem Class="d-flex align-center" xs="12">
-                            <MudText Style="font-size: 10px; color: #fff;">
-                                <em>French Open ATP</em>
-                            </MudText>
-                        </MudItem>
-                    </MudGrid>
+                <MudItem xs="6"></MudItem>
+                <MudItem Class="d-flex justify-end" xs="3">
+                    <MudPaper Elevation="0" Style="background-color: #02563C; border-end-start-radius: 30px; padding: 5px;">
+                        <MudText Style="color: #fff;" Align="Align.Center">1921PT</MudText>
+                    </MudPaper>
                 </MudItem>
             </MudGrid>
 
-        </MudItem>
-        <MudDivider Vertical="true" FlexItem="true" />
-        <MudItem xs="5">
             <MudGrid>
-                <MudItem xs="6">
-                    <MudGrid>
-                        <MudItem Class="d-flex align-center" xs="12">
-                            <MudText Style="font-size: 10px; color: #fff;">
-                                <strong>$11,200</strong>
-                            </MudText>
-                        </MudItem>
-                        <MudItem Class="d-flex align-center" xs="12">
-                            <MudText Style="font-size: 10px; color: #fff;">68.5p</MudText>
-                        </MudItem>
-                        <MudItem Class="d-flex align-center" xs="12">
-                            <MudText Style="font-size: 10px; color: #fff;">RANK: <strong>#3</strong></MudText>
-                        </MudItem>
-                    </MudGrid>
+                <MudItem xs="2"></MudItem>
+                <MudItem Class="d-flex justify-center align-center" xs="8">
+                    <MudImage Style="border: 2px #02563C solid; border-radius: 50%;" Fluid="true" Src="https://www.tennis24.com/res/image/data/tSfwGCdM-0rY6MEPI.png" Alt="Germany" />
                 </MudItem>
-                <MudItem Class="d-flex align-center" xs="6">
-                    <MudIconButton Icon="@Icons.Filled.GppBad" Style="color: #fff;" aria-label="delete"></MudIconButton>
-                </MudItem>
-            </MudGrid>
-        </MudItem>
-    </MudGrid>
-</MudPaper>
-
-<MudPaper Class="mt-4 mx-2" Elevation="0" Style="background-color: #1EC8A5; border-radius: 20px;">
-    <MudGrid Class="pb-1">
-        <MudItem xs="6">
-            <MudGrid>
-                <MudItem Class="d-flex align-center" xs="5">
-                    <MudImage Style="border-radius: 50%;" Fluid="true" Src="https://www.tennis24.com/res/image/data/tSfwGCdM-0rY6MEPI.png" Alt="Germany" />
-                </MudItem>
-                <MudItem xs="7">
-                    <MudGrid>
-                        <MudItem Class="d-flex align-center" xs="12">
-                            <MudText Style="font-size: 10px; color: #fff;">
-                                <em>N. Djokovic</em>
-                            </MudText>
-                        </MudItem>
-                        <MudItem Class="d-flex align-center" xs="12">
-                            <MudText Style="font-size: 10px; color: #fff;">
-                                <em>
-                                    vs Thiem
-                                </em>
-                            </MudText>
-                        </MudItem>
-                        <MudItem Class="d-flex align-center" xs="12">
-                            <MudText Style="font-size: 10px; color: #fff;">
-                                <em>French Open ATP</em>
-                            </MudText>
-                        </MudItem>
-                    </MudGrid>
-                </MudItem>
+                <MudItem xs="2"></MudItem>
             </MudGrid>
 
-        </MudItem>
-        <MudDivider Vertical="true" FlexItem="true" />
-        <MudItem xs="5">
-            <MudGrid>
-                <MudItem xs="6">
-                    <MudGrid>
-                        <MudItem Class="d-flex align-center" xs="12">
-                            <MudText Style="font-size: 10px; color: #fff;">
-                                <strong>$11,200</strong>
-                            </MudText>
-                        </MudItem>
-                        <MudItem Class="d-flex align-center" xs="12">
-                            <MudText Style="font-size: 10px; color: #fff;">68.5p</MudText>
-                        </MudItem>
-                        <MudItem Class="d-flex align-center" xs="12">
-                            <MudText Style="font-size: 10px; color: #fff;">RANK: <strong>#3</strong></MudText>
-                        </MudItem>
-                    </MudGrid>
-                </MudItem>
-                <MudItem Class="d-flex align-center" xs="6">
-                    <MudIconButton Icon="@Icons.Filled.GppBad" Style="color: #fff;" aria-label="delete"></MudIconButton>
-                </MudItem>
-            </MudGrid>
-        </MudItem>
-    </MudGrid>
-</MudPaper>
+            <MudText Class="mt-1" Align="Align.Center">
+                <strong>N. DJOKOVIC</strong>
+            </MudText>
+            <MudText Style="font-size: 10px;" Align="Align.Center">
+                <em>VS WAWRINKA</em>
+            </MudText>
+        </MudPaper>
 
-<MudPaper Class="mt-4 mx-2" Elevation="0" Style="background-color: #1EC8A5; border-radius: 20px;">
-    <MudGrid Class="pb-1">
-        <MudItem xs="6">
-            <MudGrid>
-                <MudItem Class="d-flex align-center" xs="5">
-                    <MudImage Style="border-radius: 50%;" Fluid="true" Src="https://www.tennis24.com/res/image/data/tSfwGCdM-0rY6MEPI.png" Alt="Germany" />
+        <MudGrid Class="mt-2">
+            <MudItem xs="3"></MudItem>
+            <MudItem Class="d-flex justify-center" xs="2">
+                <MudItem Class="d-flex justify-center" xs="1">
+                    <MudIcon Icon="@Icons.Filled.SportsBaseball" Style="color: #DDC821;" Size="Size.Small"></MudIcon>
                 </MudItem>
-                <MudItem xs="7">
-                    <MudGrid>
-                        <MudItem Class="d-flex align-center" xs="12">
-                            <MudText Style="font-size: 10px; color: #fff;">
-                                <em>N. Djokovic</em>
-                            </MudText>
-                        </MudItem>
-                        <MudItem Class="d-flex align-center" xs="12">
-                            <MudText Style="font-size: 10px; color: #fff;">
-                                <em>
-                                    vs Thiem
-                                </em>
-                            </MudText>
-                        </MudItem>
-                        <MudItem Class="d-flex align-center" xs="12">
-                            <MudText Style="font-size: 10px; color: #fff;">
-                                <em>French Open ATP</em>
-                            </MudText>
-                        </MudItem>
-                    </MudGrid>
+            </MudItem>
+            <MudItem Class="d-flex justify-center" xs="2">
+                <MudItem Class="d-flex justify-center" xs="1">
+                    <MudIcon Icon="@Icons.Filled.SportsBaseball" Style="color: #DDC821;" Size="Size.Small"></MudIcon>
                 </MudItem>
-            </MudGrid>
-            
-        </MudItem>
-        <MudDivider Vertical="true" FlexItem="true" />
-        <MudItem xs="5">
-            <MudGrid>
-                <MudItem xs="6">
-                    <MudGrid>
-                        <MudItem Class="d-flex align-center" xs="12">
-                            <MudText Style="font-size: 10px; color: #fff;">
-                                <strong>$11,200</strong>
-                            </MudText>
-                        </MudItem>
-                        <MudItem Class="d-flex align-center" xs="12">
-                            <MudText Style="font-size: 10px; color: #fff;">68.5p</MudText>
-                        </MudItem>
-                        <MudItem Class="d-flex align-center" xs="12">
-                            <MudText Style="font-size: 10px; color: #fff;">RANK: <strong>#3</strong></MudText>
-                        </MudItem>
-                    </MudGrid>
+            </MudItem>
+            <MudItem Class="d-flex justify-center" xs="2">
+                <MudItem Class="d-flex justify-center" xs="1">
+                    <MudIcon Icon="@Icons.Filled.SportsBaseball" Style="color: #DDC821; opacity: 0.3;" Color="Color.Warning" Size="Size.Small"></MudIcon>
                 </MudItem>
-                <MudItem Class="d-flex align-center" xs="6">
-                    <MudIconButton Icon="@Icons.Filled.GppBad" Style="color: #fff;" aria-label="delete"></MudIconButton>
-                </MudItem>
-            </MudGrid>
-        </MudItem>
-    </MudGrid>
-</MudPaper>
+            </MudItem>
+            <MudItem xs="3"></MudItem>
+        </MudGrid>
 
-<MudPaper Class="mt-4 mx-2 mb-6" Elevation="0" Style="background-color: #1EC8A5; border-radius: 20px;">
-    <MudGrid Class="pb-1">
-        <MudItem xs="6">
-            <MudGrid>
-                <MudItem Class="d-flex align-center" xs="5">
-                    <MudImage Style="border-radius: 50%;" Fluid="true" Src="https://www.tennis24.com/res/image/data/tSfwGCdM-0rY6MEPI.png" Alt="Germany" />
+        <MudGrid Class="mt-2">
+            <MudItem xs="5"></MudItem>
+            <MudItem Class="d-flex justify-center" xs="2">
+                <div style="background-color: #02563C; padding-inline: 20px;">
+                    <MudText Align="Align.Center" Style="color: #fff;">x2</MudText>
+                </div>
+            </MudItem>
+            <MudItem xs="5"></MudItem>
+        </MudGrid>
+    </MudItem>
+    <MudItem xs="6">
+        <MudPaper Elevation="0" Style="background-color: #BAC0BE;">
+            <MudGrid >
+                <MudItem xs="3">
+                    <MudText Align="Align.Start">
+                        <strong>1</strong>
+                    </MudText>
                 </MudItem>
-                <MudItem xs="7">
-                    <MudGrid>
-                        <MudItem Class="d-flex align-center" xs="12">
-                            <MudText Style="font-size: 10px; color: #fff;">
-                                <em>N. Djokovic</em>
-                            </MudText>
-                        </MudItem>
-                        <MudItem Class="d-flex align-center" xs="12">
-                            <MudText Style="font-size: 10px; color: #fff;">
-                                <em>
-                                    vs Thiem
-                                </em>
-                            </MudText>
-                        </MudItem>
-                        <MudItem Class="d-flex align-center" xs="12">
-                            <MudText Style="font-size: 10px; color: #fff;">
-                                <em>French Open ATP</em>
-                            </MudText>
-                        </MudItem>
-                    </MudGrid>
+                <MudItem xs="6"></MudItem>
+                <MudItem Class="d-flex justify-end" xs="3">
+                    <MudPaper Elevation="0" Style="background-color: #02563C; border-end-start-radius: 30px; padding: 5px;">
+                        <MudText Style="color: #fff;" Align="Align.Center">1921PT</MudText>
+                    </MudPaper>
                 </MudItem>
             </MudGrid>
 
-        </MudItem>
-        <MudDivider Vertical="true" FlexItem="true" />
-        <MudItem xs="5">
             <MudGrid>
-                <MudItem xs="6">
-                    <MudGrid>
-                        <MudItem Class="d-flex align-center" xs="12">
-                            <MudText Style="font-size: 10px; color: #fff;">
-                                <strong>$11,200</strong>
-                            </MudText>
-                        </MudItem>
-                        <MudItem Class="d-flex align-center" xs="12">
-                            <MudText Style="font-size: 10px; color: #fff;">68.5p</MudText>
-                        </MudItem>
-                        <MudItem Class="d-flex align-center" xs="12">
-                            <MudText Style="font-size: 10px; color: #fff;">RANK: <strong>#3</strong></MudText>
-                        </MudItem>
-                    </MudGrid>
+                <MudItem xs="2"></MudItem>
+                <MudItem Class="d-flex justify-center align-center" xs="8">
+                    <MudImage Style="border: 2px #02563C solid; border-radius: 50%;" Fluid="true" Src="https://www.tennis24.com/res/image/data/tSfwGCdM-0rY6MEPI.png" Alt="Germany" />
                 </MudItem>
-                <MudItem Class="d-flex align-center" xs="6">
-                    <MudIconButton Icon="@Icons.Filled.GppBad" Style="color: #fff;" aria-label="delete"></MudIconButton>
+                <MudItem xs="2"></MudItem>
+            </MudGrid>
+
+            <MudText Class="mt-1" Align="Align.Center">
+                <strong>N. DJOKOVIC</strong>
+            </MudText>
+            <MudText Style="font-size: 10px;" Align="Align.Center">
+                <em>VS WAWRINKA</em>
+            </MudText>
+        </MudPaper>
+
+        <MudGrid Class="mt-2">
+            <MudItem xs="3"></MudItem>
+            <MudItem Class="d-flex justify-center" xs="2">
+                <MudItem Class="d-flex justify-center" xs="1">
+                    <MudIcon Icon="@Icons.Filled.SportsBaseball" Style="color: #DDC821;" Size="Size.Small"></MudIcon>
+                </MudItem>
+            </MudItem>
+            <MudItem Class="d-flex justify-center" xs="2">
+                <MudItem Class="d-flex justify-center" xs="1">
+                    <MudIcon Icon="@Icons.Filled.SportsBaseball" Style="color: #DDC821;" Size="Size.Small"></MudIcon>
+                </MudItem>
+            </MudItem>
+            <MudItem Class="d-flex justify-center" xs="2">
+                <MudItem Class="d-flex justify-center" xs="1">
+                    <MudIcon Icon="@Icons.Filled.SportsBaseball" Style="color: #DDC821; opacity: 0.3;" Color="Color.Warning" Size="Size.Small"></MudIcon>
+                </MudItem>
+            </MudItem>
+            <MudItem xs="3"></MudItem>
+        </MudGrid>
+
+        <MudGrid Class="mt-2">
+            <MudItem xs="5"></MudItem>
+            <MudItem Class="d-flex justify-center" xs="2">
+                <div style="background-color: #02563C; padding-inline: 20px;">
+                    <MudText Align="Align.Center" Style="color: #fff;">x2</MudText>
+                </div>
+            </MudItem>
+            <MudItem xs="5"></MudItem>
+        </MudGrid>
+    </MudItem>
+    <MudItem xs="6">
+        <MudPaper Elevation="0" Style="background-color: #BAC0BE;">
+           <MudGrid >
+                <MudItem xs="3">
+                    <MudText Align="Align.Start">
+                        <strong>1</strong>
+                    </MudText>
+                </MudItem>
+                <MudItem xs="6"></MudItem>
+                <MudItem Class="d-flex justify-end" xs="3">
+                    <MudPaper Elevation="0" Style="background-color: #02563C; border-end-start-radius: 30px; padding: 5px;">
+                        <MudText Style="color: #fff;" Align="Align.Center">1921PT</MudText>
+                    </MudPaper>
                 </MudItem>
             </MudGrid>
-        </MudItem>
-    </MudGrid>
-</MudPaper>
+
+            <MudGrid>
+                <MudItem xs="2"></MudItem>
+                <MudItem Class="d-flex justify-center align-center" xs="8">
+                    <MudImage Style="border: 2px #02563C solid; border-radius: 50%;" Fluid="true" Src="https://www.tennis24.com/res/image/data/tSfwGCdM-0rY6MEPI.png" Alt="Germany" />
+                </MudItem>
+                <MudItem xs="2"></MudItem>
+            </MudGrid>
+
+            <MudText Class="mt-1" Align="Align.Center">
+                <strong>N. DJOKOVIC</strong>
+            </MudText>
+            <MudText Style="font-size: 10px;" Align="Align.Center">
+                <em>VS WAWRINKA</em>
+            </MudText>
+        </MudPaper>
+
+        <MudGrid Class="mt-2">
+            <MudItem xs="3"></MudItem>
+            <MudItem Class="d-flex justify-center" xs="2">
+                <MudItem Class="d-flex justify-center" xs="1">
+                    <MudIcon Icon="@Icons.Filled.SportsBaseball" Style="color: #DDC821;" Size="Size.Small"></MudIcon>
+                </MudItem>
+            </MudItem>
+            <MudItem Class="d-flex justify-center" xs="2">
+                <MudItem Class="d-flex justify-center" xs="1">
+                    <MudIcon Icon="@Icons.Filled.SportsBaseball" Style="color: #DDC821;" Size="Size.Small"></MudIcon>
+                </MudItem>
+            </MudItem>
+            <MudItem Class="d-flex justify-center" xs="2">
+                <MudItem Class="d-flex justify-center" xs="1">
+                    <MudIcon Icon="@Icons.Filled.SportsBaseball" Style="color: #DDC821; opacity: 0.3;" Color="Color.Warning" Size="Size.Small"></MudIcon>
+                </MudItem>
+            </MudItem>
+            <MudItem xs="3"></MudItem>
+        </MudGrid>
+
+        <MudGrid Class="mt-2">
+            <MudItem xs="5"></MudItem>
+            <MudItem Class="d-flex justify-center" xs="2">
+                <div style="background-color: #02563C; padding-inline: 20px;">
+                    <MudText Align="Align.Center" Style="color: #fff;">x2</MudText>
+                </div>
+            </MudItem>
+            <MudItem xs="5"></MudItem>
+        </MudGrid>
+    </MudItem>
+    <MudItem Class="mb-5" xs="6">
+        <MudPaper Elevation="0" Style="background-color: #BAC0BE;">
+            <MudGrid Class="pa-12">
+                <MudItem Class="d-flex justify-center align-center" xs="12">
+                    <MudIcon Size="Size.Large" Icon="@Icons.Filled.AddCircleOutline"></MudIcon>
+                </MudItem>
+            </MudGrid>
+        </MudPaper>
+    </MudItem>
+    <MudItem Class="mb-5" xs="6">
+        <MudPaper Elevation="0" Style="background-color: #BAC0BE;">
+            <MudGrid Class="pa-12">
+                <MudItem Class="d-flex justify-center align-center" xs="12">
+                    <MudIcon Size="Size.Large" Icon="@Icons.Filled.AddCircleOutline"></MudIcon>
+                </MudItem>
+            </MudGrid>
+        </MudPaper>
+    </MudItem>
+    <MudItem Class="mb-5" xs="6">
+        <MudPaper Elevation="0" Style="background-color: #BAC0BE;">
+            <MudGrid Class="pa-12">
+                <MudItem Class="d-flex justify-center align-center" xs="12">
+                    <MudIcon Size="Size.Large" Icon="@Icons.Filled.AddCircleOutline"></MudIcon>
+                </MudItem>
+            </MudGrid>
+        </MudPaper>
+    </MudItem>
+    <MudItem Class="mb-5" xs="6">
+        <MudPaper Elevation="0" Style="background-color: #BAC0BE;">
+            <MudGrid Class="pa-12">
+                <MudItem Class="d-flex justify-center align-center" xs="12">
+                    <MudIcon Size="Size.Large" Icon="@Icons.Filled.AddCircleOutline"></MudIcon>
+                </MudItem>
+            </MudGrid>
+        </MudPaper>
+    </MudItem>
+</MudGrid>
+
+@code {
+    private bool open = false;
+    private int selected = 11;
+
+    public string SelectedOption { get; set; }
+
+    public string Search { get; set; }
+
+    public bool Label_CheckBox3 { get; set; } = false;
+
+    void ToggleDrawer()
+    {
+        open = !open;
+    }
+}
