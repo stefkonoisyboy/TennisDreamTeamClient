@@ -1,1 +1,20 @@
 ﻿
+.active-tab {
+    border-radius: 3px 3px 0px 0px;
+    align-self: center;
+    height: 8px;
+    width: 100%;
+    background: rgba(255, 0, 0, 0.78);
+}
+
+.tabs{
+    flex-wrap:nowrap;
+    overflow:hidden;
+    overflow-x:scroll;
+}
+
+.tab {
+   flex-direction: column;
+   overflow-y:hidden;
+   height: 45px;
+}

@@ -1,48 +1,55 @@
 ﻿@page "/standings"
 
 <PageTitle>Standings</PageTitle>
-
-<MudText Typo="Typo.body2" Class="pl-3" Style="background: #fff2ce;">
-    Ranklist
-</MudText>
-<MudGrid Class="pl-3">
+<MudGrid>
+    <MudItem xs="12">
+        <MudText Typo="Typo.body2" Style="background: #fff2ce;">
+            Ranklist
+        </MudText>
+    </MudItem>
     <MudItem @onclick="this.NavigateToRanklist" xs="12">
-        <MudText Style="color:black; font-weight: bolder; font-size: 85%;" Typo="Typo.body1">
+        <MudText Class="pl-3" Style="color:black; font-weight: bolder; font-size: 85%;" Typo="Typo.body1">
             ATP Single
         </MudText>
     </MudItem>
-    <MudDivider DividerType="DividerType.FullWidth" />
+    <MudItem Class="pl-0" xs="12">
+        <MudDivider DividerType="DividerType.FullWidth" />
+    </MudItem>
     <MudItem xs="12">
-        <MudText Style="color:black; font-weight: bolder;font-size: 85%;" Typo="Typo.body1">
+        <MudText Class="pl-3" Style="color:black; font-weight: bolder;font-size: 85%;" Typo="Typo.body1">
             WTA Single
         </MudText>
     </MudItem>
+    <MudItem Class="pl-0" xs="12">
+        <MudDivider DividerType="DividerType.FullWidth" />
+    </MudItem>
     <MudItem xs="12">
-        <MudText Style="color:black; font-weight: bolder;font-size: 85%;" Typo="Typo.body1">
+        <MudText Class="pl-3" Style="color:black; font-weight: bolder;font-size: 85%;" Typo="Typo.body1">
             ATP Single Race
         </MudText>
     </MudItem>
-    <MudDivider DividerType="DividerType.FullWidth" />
+    <MudItem Class="pl-0" xs="12">
+        <MudDivider DividerType="DividerType.FullWidth" />
+    </MudItem>
      <MudItem xs="12">
-        <MudText Style="color:black; font-weight: bolder;font-size: 85%;" Typo="Typo.body1">
+        <MudText Class="pl-3" Style="color:black; font-weight: bolder;font-size: 85%;" Typo="Typo.body1">
             WTA Single Race
         </MudText>
     </MudItem>
-    <MudDivider DividerType="DividerType.FullWidth" />
-    <MudItem xs="12">
-
+    <MudItem Class="pl-0" xs="12">
+        <MudDivider DividerType="DividerType.FullWidth" />
     </MudItem>
 
 </MudGrid>
 <MudText Style="background:#C0C0C0;" Class="pl-5"  Typo="Typo.body2">
     G
 </MudText>
-<MudGrid>
+<MudGrid Class="pl-3">
     <MudItem xs="3">
         <MudImage Fluid="true" Src="https://res.cloudinary.com/djokeracloud/image/upload/v1660044148/tennid-dream-team/germany_ku2xlt.png" Alt="Germany" />
     </MudItem>
-    <MudItem xs="9">
-        <MudText Style="color:#C0C0C0; font-weight: bolder;" Typo="Typo.body1">
+    <MudItem Class="d-flex align-center" xs="9">
+        <MudText  Style="color:black; font-weight: bolder; font-size:85%" Typo="Typo.body1">
             Germany
         </MudText>
     </MudItem>

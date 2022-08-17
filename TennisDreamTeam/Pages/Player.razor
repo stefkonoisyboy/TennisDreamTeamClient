@@ -24,6 +24,9 @@
             </MudGrid>
     </MudItem>
     <MudItem Style="background:#C0C0C0;" xs="12">
+        <MudDivider Style="color:#646f6e;" DividerType="DividerType.FullWidth" />
+    </MudItem>
+    <MudItem Style="background:#C0C0C0;" xs="12">
         <MudGrid Class="pl-3">
             <MudItem xs="1">
                 <MudIcon Icon="@Icons.Filled.InsertChart" />
@@ -40,7 +43,7 @@
             @if (this.isResultsChoosed)
             {
                 <MudItem Style="color: rgba(255, 0, 0, 0.78); border-bottom:4px solid rgba(255, 0, 0, 0.78);" xs="4">
-                 Results
+                    Results
                 </MudItem>
                 <MudItem @onclick="ToggleState" xs="4">
                     News

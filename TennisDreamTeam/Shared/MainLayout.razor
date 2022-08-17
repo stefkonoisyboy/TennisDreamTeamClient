@@ -35,7 +35,7 @@
                     <MudIconButton OnClick="this.NavigateToTeam" Icon="@Icons.Filled.PeopleOutline" Color="Color.Inherit" />
                 </MudItem>
                 <MudItem Class="d-flex justify-center" xs="3">
-                    <MudIconButton Icon="@Icons.Filled.StarOutline" Color="Color.Inherit" />
+                    <MudIconButton OnClick="this.NavigateToFavourites" Icon="@Icons.Filled.StarOutline" Color="Color.Inherit" />
                 </MudItem>
                 <MudItem Class="d-flex justify-center" xs="3">
                     <MudIconButton OnClick="this.NavigateToStandings" Icon="@Icons.Filled.WineBar" Color="Color.Inherit" />
@@ -57,7 +57,7 @@
                     <MudIconButton Icon="@Icons.Filled.PeopleOutline" Color="Color.Inherit" />
                 </MudItem>
                 <MudItem Class="d-flex justify-center" xs="2">
-                    <MudIconButton Icon="@Icons.Filled.StarOutline" Color="Color.Inherit" />
+                    <MudIconButton OnClick="this.NavigateToFavourites" Icon="@Icons.Filled.StarOutline" Color="Color.Inherit" />
                 </MudItem>
                 <MudItem Class="d-flex justify-center" xs="2">
                     <MudIconButton OnClick="this.NavigateToStandings" Icon="@Icons.Filled.WineBar" Color="Color.Inherit" />
@@ -91,6 +91,11 @@
     void NavigateToStandings() {
         this.navigationManager.NavigateTo("/standings");
     }
+
+    void NavigateToFavourites()
+    {
+        this.navigationManager.NavigateTo("/favourites");
+    } 
 
     void NavigateToTeam() 
     {

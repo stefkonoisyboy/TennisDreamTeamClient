@@ -1,0 +1,196 @@
+﻿@page "/favourites"
+
+<PageTitle>Favourites</PageTitle>
+
+
+<MudGrid Class="mx-1 pt-3 pb-1 tabs">
+    <MudItem Class="tab px-1 py-0 d-flex justify-content" xs="4">
+        <MudButton OnClick="ToggleMatches" Style="background: transparent; box-shadow:none;">
+            <MudText Align="Align.Center" Color="this.isMathesTabOpened ? Color.Error : Color.Default" Typo="Typo.body1" Class="rounded" Style="font-size:85%;width: 100%">
+                <strong>
+                    MATCHES
+                </strong>
+            </MudText>
+        </MudButton>
+        @if (this.isMathesTabOpened)
+        {
+            <div class="active-tab">
+            </div>
+        }
+    </MudItem>
+    <MudItem Class="tab px-1 py-0 d-flex justify-content" xs="4">
+        <MudButton OnClick="ToggleMatches" Variant="Variant.Filled" Style="background: transparent; box-shadow:none;">
+           <MudText Color="!this.isMathesTabOpened ? Color.Error :Color.Default" Align="Align.Center" Typo="Typo.body1" Style="font-size:85%;width:100%;">
+                <strong>
+                     NEWS
+                </strong>
+           </MudText>
+        </MudButton>
+        @if (!this.isMathesTabOpened)
+        {
+            <div class="active-tab">
+            </div>
+        }
+    </MudItem>
+</MudGrid>
+<MudDivider DividerType="DividerType.FullWidth" />
+@if (this.isMathesTabOpened)
+{
+    <MudGrid Class="mx-1 py-3">
+        <MudItem Class="px-1" xs="5">
+            <MudButton OnClick="ToggleLiveMatches" Variant="Variant.Filled" Color="!this.isLiveMatchesOpened  ? Color.Error : Color.Default">
+                <MudText Style="font-size:85%" Typo="Typo.body1">
+                    <strong>
+                    ALL MATCHES
+                    </strong>
+                </MudText>
+            </MudButton>
+        </MudItem>
+        <MudItem Class="px-1" xs="3">
+            <MudButton OnClick="ToggleLiveMatches" Variant="Variant.Filled" Color="this.isLiveMatchesOpened ? Color.Error : Color.Default">
+                <MudText Style="font-size:85%" Color="Color.Default" Typo="Typo.body1">
+                    <strong>
+                        LIVE
+                    </strong>
+                </MudText>
+            </MudButton>
+        </MudItem>
+        <MudItem xs="2">
+            <MudButton OnClick="OpenOptionsDilog">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="26px" height="26px" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                </svg>
+            </MudButton>
+        </MudItem>
+    </MudGrid>
+    @if (this.isLiveMatchesOpened)
+    {
+        <MudDivider DividerType="DividerType.FullWidth" />
+        <MudPaper Class="mx-1 my-3" Elevation="0">
+            <MudText Align="Align.Center" Typo="Typo.h6">
+                <strong>
+                    Add your first team and recive live info
+                </strong>
+            </MudText>
+            <MudText Align="Align.Center" Typo="Typo.body1">
+                All matches and important news for your favourite teams on one places.
+            </MudText>
+        </MudPaper>
+        <MudGrid Class="mt-3">
+            <MudItem Class="d-flex justify-center" xs="12">
+                <MudButton Variant="Variant.Filled" Color="Color.Dark">
+                    SEARCH TIME
+                </MudButton>
+            </MudItem>
+        </MudGrid>
+    }
+    else
+    {
+        <MudDivider DividerType="DividerType.FullWidth" />
+        <MudPaper Class="mx-1 my-3" Elevation="0">
+            <MudText Align="Align.Center" Typo="Typo.h6">
+                <strong>
+                    Add your first team
+                </strong>
+            </MudText>
+            <MudText Align="Align.Center" Typo="Typo.body1">
+                All matches and important news for your favourite teams on one places.
+            </MudText>
+        </MudPaper>
+        <MudGrid Class="mt-3">
+            <MudItem Class="d-flex justify-center" xs="12">
+                <MudButton Variant="Variant.Filled" Color="Color.Dark">
+                    SEARCH TIME
+                </MudButton>
+            </MudItem>
+        </MudGrid>
+    }
+}
+else
+{
+   <MudPaper Class="mx-1 my-3" Elevation="0">
+        <MudText Align="Align.Center" Typo="Typo.h6">
+            <strong>
+                Team news
+            </strong>
+        </MudText>
+        <MudText Align="Align.Center" Typo="Typo.body1">
+            Receive all last news around your favourite teams.
+        </MudText>
+    </MudPaper>
+    <MudGrid Class="mt-3">
+        <MudItem Class="d-flex justify-center" xs="12">
+            <MudButton Variant="Variant.Filled" Color="Color.Dark">
+                SEARCH TIME
+            </MudButton>
+        </MudItem>
+    </MudGrid>
+}
+
+<MudDialog Style="width:100%;" @bind-IsVisible="this.isOptionsVisible" Options="dialogOptions">
+    <TitleContent >
+        <MudGrid Class="align-center">
+            
+            <MudItem xs="9">
+                Options for ordering
+            </MudItem>
+            <MudItem xs="3">
+                 <MudIconButton OnClick="CloseOptions" Icon="@Icons.Filled.Close" />
+            </MudItem>
+        </MudGrid>
+    </TitleContent>
+    <DialogContent>
+        <MudGrid>
+                <MudItem xs="12">
+                    <MudGrid>
+                        <MudItem xs="9">
+                            <MudText Style="font-size:85%;" Color="Color.Dark" Typo="Typo.body2">
+                                Order matches by sport
+                            </MudText>
+                        </MudItem>
+                        <MudItem xs="3">
+                            <MudSwitch Color="Color.Success" @bind-Checked="@this.orderdBySport" />
+                        </MudItem>
+                    </MudGrid>
+                </MudItem>
+                <MudItem xs="12">
+                     <MudGrid Class="align-center">
+                        <MudItem  xs="9">
+                            <MudText Style="font-size:85%;" Color="Color.Dark">
+                                Devide my matches and my teams 
+                            </MudText>
+                            <MudText Style="font-size:85%;" Color="Color.Default">
+                                Meetings from MY matches and MY teams will be devided
+                            </MudText>
+                        </MudItem>
+                        <MudItem xs="3">
+                            <MudSwitch Color="Color.Success" @bind-Checked="@this.devided" />
+                        </MudItem>
+                    </MudGrid>
+                </MudItem>
+            </MudGrid>
+    </DialogContent>
+</MudDialog>
+
+@code{
+    private bool isMathesTabOpened = true;
+    private bool isLiveMatchesOpened = false;
+    private bool orderdBySport = false;
+    private bool devided = false;
+
+    private bool isOptionsVisible;
+    private DialogOptions dialogOptions = new() { FullWidth = true, Position=DialogPosition.BottomCenter};
+
+    private void ToggleMatches()
+    {
+        this.isMathesTabOpened = !this.isMathesTabOpened;
+    }
+
+    private void ToggleLiveMatches()
+    {
+        this.isLiveMatchesOpened = !this.isLiveMatchesOpened;
+    }
+
+    private void OpenOptionsDilog() => this.isOptionsVisible = true;
+    private void CloseOptions() => this.isOptionsVisible = false;
+}
