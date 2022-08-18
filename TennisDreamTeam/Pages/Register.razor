@@ -1,0 +1,59 @@
+﻿@page "/register"
+
+<PageTitle>Register</PageTitle>
+
+<MudImage Style="block-size: 100%; inline-size: 5000px;" Src="https://img.freepik.com/free-vector/tennis-court-outdoor-field-sport-exercises_107791-7253.jpg?w=1380&t=st=1660848631~exp=1660849231~hmac=45626815727ed148be0fd363cd1a4855b1fa9b53061d9d19f597cd5f357ca9ce" Alt="Germany" />
+
+<MudPaper Class="pa-4" Style="position: absolute; inline-size: 100%; background-color: transparent; inset-block-start: 50px; inset-inline-start: 0;" Elevation="0">
+
+    <MudGrid Class="mb-2">
+        <MudItem xs="12">
+            <MudIcon @onclick="this.NavigateToLogin" Size="Size.Large" Icon="@Icons.Filled.ArrowBack" Style="color: #DDC821;"></MudIcon>
+        </MudItem>
+    </MudGrid>
+
+    <MudGrid Class="mb-2">
+        <MudItem Class="d-flex justify-center" xs="12">
+            <MudTextField @bind-Value="Username" Placeholder="Username" Label="Username" Style="outline-color: #DDC821;" Variant="Variant.Outlined" Adornment="Adornment.Start" AdornmentColor="Color.Warning" AdornmentIcon="@Icons.Filled.Person" />
+        </MudItem>
+    </MudGrid>
+
+    <MudGrid Class="mb-2">
+        <MudItem Class="d-flex justify-center" xs="12">
+            <MudTextField @bind-Value="Email" Placeholder="Email" Label="Email" Style="outline-color: #DDC821;" Variant="Variant.Outlined" Adornment="Adornment.Start" AdornmentColor="Color.Warning" AdornmentIcon="@Icons.Filled.Person" />
+        </MudItem>
+    </MudGrid>
+
+    <MudGrid Class="mb-2">
+        <MudItem Class="d-flex justify-center" xs="12">
+            <MudTextField @bind-Value="Password" Placeholder="Password" Label="Password" Style="outline-color: #DDC821;" Variant="Variant.Outlined" Adornment="Adornment.Start" AdornmentColor="Color.Warning" AdornmentIcon="@Icons.Filled.Lock" />
+        </MudItem>
+    </MudGrid>
+
+     <MudGrid Class="mb-2">
+        <MudItem Class="d-flex justify-center" xs="12">
+            <MudTextField @bind-Value="ConfirmPassword" Placeholder="Confirm Password" Label="Confirm Password" Style="outline-color: #DDC821;" Variant="Variant.Outlined" Adornment="Adornment.Start" AdornmentColor="Color.Warning" AdornmentIcon="@Icons.Filled.Lock" />
+        </MudItem>
+    </MudGrid>
+
+    <MudGrid Class="mb-2">
+        <MudItem Class="d-flex justify-center" xs="12">
+            <MudButton Variant="Variant.Filled" Style="background-color: #DDC821; color: #fff; outline-color: #fff; inline-size: 100%;">REGISTRATION</MudButton>
+        </MudItem>
+    </MudGrid>
+</MudPaper>
+
+@code {
+    public string Username { get; set; }
+
+    public string Email { get; set; }
+
+    public string Password { get; set; }
+
+    public string ConfirmPassword { get; set; }
+
+    void NavigateToLogin()
+    {
+        this.navigationManager.NavigateTo("/login");
+    }
+}
