@@ -1,5 +1,4 @@
-﻿
-.active-tab {
+﻿.active-tab {
     border-radius: 3px 3px 0px 0px;
     align-self: center;
     height: 8px;
@@ -7,14 +6,18 @@
     background: rgba(255, 0, 0, 0.78);
 }
 
-.tabs{
-    flex-wrap:nowrap;
-    overflow:hidden;
-    overflow-x:scroll;
+.tabs {
+    flex-wrap: nowrap;
+    overflow: hidden;
+    overflow-x: scroll;
 }
 
 .tab {
-   flex-direction: column;
-   overflow-y:hidden;
-   height: 45px;
+    flex-direction: column;
+    overflow-y: hidden;
+    height: 45px;
+}
+
+body {
+    font-family: 'Kaushan Script', cursive;
 }
